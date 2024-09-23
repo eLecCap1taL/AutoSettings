@@ -21,7 +21,7 @@ AutoSetting_BINARY_DIR:STATIC=D:/CFG AutoSettings Framework/AutoSetting/build/De
 AutoSetting_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-AutoSetting_SOURCE_DIR:STATIC=D:/CFG AutoSettings Framework/AutoSetting
+AutoSetting_SOURCE_DIR:STATIC=D:/CFG AutoSettings Framework/AutoSettings
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=D:/Qt/Tools/mingw1120_64/bin/addr2line.exe
@@ -433,7 +433,7 @@ CMAKE_GENERATOR_TOOLSET:INTERNAL=
 CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=D:/CFG AutoSettings Framework/AutoSetting
+CMAKE_HOME_DIRECTORY:INTERNAL=D:/CFG AutoSettings Framework/AutoSettings
 //ADVANCED property for variable: CMAKE_INSTALL_BINDIR
 CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_INSTALL_DATADIR

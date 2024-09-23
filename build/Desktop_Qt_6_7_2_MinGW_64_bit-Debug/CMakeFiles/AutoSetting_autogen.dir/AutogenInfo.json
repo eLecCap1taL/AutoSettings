@@ -3,11 +3,11 @@
 	"BUILD_DIR" : "D:/CFG AutoSettings Framework/AutoSetting/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/AutoSetting_autogen",
 	"CMAKE_BINARY_DIR" : "D:/CFG AutoSettings Framework/AutoSetting/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug",
 	"CMAKE_CURRENT_BINARY_DIR" : "D:/CFG AutoSettings Framework/AutoSetting/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug",
-	"CMAKE_CURRENT_SOURCE_DIR" : "D:/CFG AutoSettings Framework/AutoSetting",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/CFG AutoSettings Framework/AutoSettings",
 	"CMAKE_EXECUTABLE" : "D:/Qt/Tools/CMake_64/bin/cmake.exe",
 	"CMAKE_LIST_FILES" : 
 	[
-		"D:/CFG AutoSettings Framework/AutoSetting/CMakeLists.txt",
+		"D:/CFG AutoSettings Framework/AutoSettings/CMakeLists.txt",
 		"D:/CFG AutoSettings Framework/AutoSetting/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake",
 		"D:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake",
 		"D:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeSystem.cmake.in",
@@ -330,14 +330,14 @@
 		"D:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeParseArguments.cmake",
 		"D:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "D:/CFG AutoSettings Framework/AutoSetting",
+	"CMAKE_SOURCE_DIR" : "D:/CFG AutoSettings Framework/AutoSettings",
 	"CROSS_CONFIG" : false,
 	"DEP_FILE" : "D:/CFG AutoSettings Framework/AutoSetting/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/AutoSetting_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "AutoSetting_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"D:/CFG AutoSettings Framework/AutoSetting/mainwindow.h",
+			"D:/CFG AutoSettings Framework/AutoSettings/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
 			null
@@ -414,9 +414,9 @@
 	"SETTINGS_FILE" : "D:/CFG AutoSettings Framework/AutoSetting/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/AutoSetting_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "D:/CFG AutoSettings Framework/AutoSetting/main.cpp", "MU", null ],
+		[ "D:/CFG AutoSettings Framework/AutoSettings/main.cpp", "MU", null ],
 		[
-			"D:/CFG AutoSettings Framework/AutoSetting/mainwindow.cpp",
+			"D:/CFG AutoSettings Framework/AutoSettings/mainwindow.cpp",
 			"MU",
 			null
 		]

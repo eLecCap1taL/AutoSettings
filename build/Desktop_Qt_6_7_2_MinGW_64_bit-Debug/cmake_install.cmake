@@ -1,4 +1,4 @@
-# Install script for directory: D:/CFG AutoSettings Framework/AutoSetting
+# Install script for directory: D:/CFG AutoSettings Framework/AutoSettings
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

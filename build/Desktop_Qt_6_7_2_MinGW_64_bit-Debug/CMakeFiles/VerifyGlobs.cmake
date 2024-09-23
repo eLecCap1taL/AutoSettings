@@ -3,7 +3,7 @@
 cmake_policy(SET CMP0009 NEW)
 
 # _directory_contents at D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSetting/*.c")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSettings/*.c")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -12,7 +12,7 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
 endif()
 
 # _directory_contents at D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSetting/*.c++")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSettings/*.c++")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -21,7 +21,7 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
 endif()
 
 # _directory_contents at D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSetting/*.cc")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSettings/*.cc")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -30,7 +30,7 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
 endif()
 
 # _directory_contents at D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSetting/*.ch")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSettings/*.ch")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -39,11 +39,11 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
 endif()
 
 # _directory_contents at D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSetting/*.cpp")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSettings/*.cpp")
 set(OLD_GLOB
-  "D:/CFG AutoSettings Framework/AutoSetting/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CompilerIdCXX/CMakeCXXCompilerId.cpp"
-  "D:/CFG AutoSettings Framework/AutoSetting/main.cpp"
-  "D:/CFG AutoSettings Framework/AutoSetting/mainwindow.cpp"
+  "D:/CFG AutoSettings Framework/AutoSettings/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+  "D:/CFG AutoSettings Framework/AutoSettings/main.cpp"
+  "D:/CFG AutoSettings Framework/AutoSettings/mainwindow.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -51,26 +51,7 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
 endif()
 
 # _directory_contents at D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSetting/*.cxx")
-set(OLD_GLOB
-  )
-if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
-  message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "D:/CFG AutoSettings Framework/AutoSetting/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
-endif()
-
-# _directory_contents at D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSetting/*.h")
-set(OLD_GLOB
-  "D:/CFG AutoSettings Framework/AutoSetting/mainwindow.h"
-  )
-if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
-  message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "D:/CFG AutoSettings Framework/AutoSetting/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
-endif()
-
-# _directory_contents at D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSetting/*.h++")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSettings/*.cxx")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -79,7 +60,17 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
 endif()
 
 # _directory_contents at D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSetting/*.hh")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSettings/*.h")
+set(OLD_GLOB
+  "D:/CFG AutoSettings Framework/AutoSettings/mainwindow.h"
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "D:/CFG AutoSettings Framework/AutoSetting/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
+endif()
+
+# _directory_contents at D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSettings/*.h++")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -88,7 +79,7 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
 endif()
 
 # _directory_contents at D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSetting/*.hpp")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSettings/*.hh")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -97,7 +88,7 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
 endif()
 
 # _directory_contents at D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSetting/*.hxx")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSettings/*.hpp")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -106,7 +97,7 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
 endif()
 
 # _directory_contents at D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSetting/*.java")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSettings/*.hxx")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -115,7 +106,7 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
 endif()
 
 # _directory_contents at D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSetting/*.js")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSettings/*.java")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -124,7 +115,7 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
 endif()
 
 # _directory_contents at D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSetting/*.jui")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSettings/*.js")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -133,7 +124,7 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
 endif()
 
 # _directory_contents at D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSetting/*.qml")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSettings/*.jui")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -142,7 +133,7 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
 endif()
 
 # _directory_contents at D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSetting/*.qrc")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSettings/*.qml")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -151,7 +142,7 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
 endif()
 
 # _directory_contents at D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSetting/*.qs")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSettings/*.qrc")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -160,9 +151,18 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
 endif()
 
 # _directory_contents at D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSetting/*.ui")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSettings/*.qs")
 set(OLD_GLOB
-  "D:/CFG AutoSettings Framework/AutoSetting/mainwindow.ui"
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "D:/CFG AutoSettings Framework/AutoSetting/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/cmake.verify_globs")
+endif()
+
+# _directory_contents at D:/Qt/6.7.2/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/CFG AutoSettings Framework/AutoSettings/*.ui")
+set(OLD_GLOB
+  "D:/CFG AutoSettings Framework/AutoSettings/mainwindow.ui"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
