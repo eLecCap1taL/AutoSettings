@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QPushButton>
+#include <QScrollArea>
 #include <vector>
 
 QT_BEGIN_NAMESPACE
@@ -37,9 +38,11 @@ public slots:
 private:
     Ui::MainWindow *ui;
     void Setup_MenuBT();
+    void Setup_RightStacked();
 
 protected:
     std::vector<QPushButton*> MenuBTls;
+    std::vector<QScrollArea*> RightStackedPages;
 
 };
 #endif // MAINWINDOW_H

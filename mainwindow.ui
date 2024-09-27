@@ -74,7 +74,7 @@
         <number>8</number>
        </property>
        <property name="rightMargin">
-        <number>8</number>
+        <number>4</number>
        </property>
        <property name="bottomMargin">
         <number>8</number>
@@ -159,19 +159,62 @@ border-radius: 10px</string>
      </widget>
     </item>
     <item>
-     <widget class="QWidget" name="verticalWidget_2" native="true">
+     <widget class="QWidget" name="RightWidget" native="true">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
         <horstretch>1</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
-      <layout class="QVBoxLayout" name="RightLayout"/>
+      <layout class="QVBoxLayout" name="RightLayout">
+       <property name="leftMargin">
+        <number>4</number>
+       </property>
+       <property name="topMargin">
+        <number>8</number>
+       </property>
+       <property name="rightMargin">
+        <number>8</number>
+       </property>
+       <property name="bottomMargin">
+        <number>8</number>
+       </property>
+       <item>
+        <widget class="FadeQStackedWidget" name="RightStacked">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="RightPage0">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3"/>
+         </widget>
+         <widget class="QWidget" name="RightPage1">
+          <layout class="QVBoxLayout" name="verticalLayout_4"/>
+         </widget>
+         <widget class="QWidget" name="RightPage2">
+          <layout class="QVBoxLayout" name="verticalLayout_5"/>
+         </widget>
+         <widget class="QWidget" name="RightPage3">
+          <layout class="QVBoxLayout" name="verticalLayout_6"/>
+         </widget>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </item>
    </layout>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>FadeQStackedWidget</class>
+   <extends>QStackedWidget</extends>
+   <header location="global">fadeqstackedwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="MainResource.qrc"/>
  </resources>

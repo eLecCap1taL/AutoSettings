@@ -28,6 +28,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
         MainResource.qrc
         mainwindow_MenuBT.cpp
+        fadeqstackedwidget.h fadeqstackedwidget.cpp
+        qstylewidget.h qstylewidget.cpp
 
     )
 # Define target properties for Android with Qt 6 as:
@@ -69,6 +71,10 @@ set_target_properties(AutoSetting PROPERTIES
 )
 
 include(GNUInstallDirs)
+
+include_directories("D:\\CFGAutoSettingsFramework\\AutoSettings")
+set(CMAKE_EXE_LINKER_FLAGS "-static")
+
 install(TARGETS AutoSetting
     BUNDLE DESTINATION .
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}

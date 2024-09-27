@@ -39,8 +39,7 @@ QString MenuBTStyleType::styleSheet(){
     ret+=QString::number(GetAnotherToRange(MainWindow::MenuBTStyle[0].r,MainWindow::MenuBTStyle[1].r,r,170,196));
     ret+=", ";
     ret+=QString::number(GetAnotherToRange(MainWindow::MenuBTStyle[0].g,MainWindow::MenuBTStyle[1].g,g,190,212));
-    ret+=", 255);\n";
-    ret+="box-shadow: 0px 0px 10px #404040bd";
+    ret+=", 255)";
     return ret;
 }
 MenuBTStyleType MenuBTStyleType::ChangeY(int _Y){
@@ -54,6 +53,10 @@ void MainWindow::Setup_MenuBT(){
     MenuBTls.push_back(ui->MenuBT1);
     MenuBTls.push_back(ui->MenuBT2);
     MenuBTls.push_back(ui->MenuBT3);
+
+    ui->MenuBT1->setProperty("bt_index",1);
+    ui->MenuBT2->setProperty("bt_index",2);
+    ui->MenuBT3->setProperty("bt_index",3);
 
     for(auto &bt:MenuBTls){
         bt->setProperty("Enabled",0);
@@ -79,12 +82,15 @@ void MainWindow::UpdateMenuBTStatus(){
     }
 }
 void MainWindow::MenuBTClicked(){
+    if(ui->RightStacked->isAnimating)   return ;
     for(auto &bt:MenuBTls){
         bt->setProperty("LstEnabled",bt->property("Enabled"));
         bt->setProperty("Enabled",(sender()->objectName()==bt->objectName()?1:0));
     }
     for(auto &bt:MenuBTls){
         if(bt->property("LstEnabled")!=bt->property("Enabled")){
+            //deal with animation
+
             auto ani=new QPropertyAnimation(bt,"my_styleSheet");
             ani->setDuration(200);
             ani->setStartValue(QVariant::fromValue(MenuBTStyle[bt->property("LstEnabled").toBool()]));
@@ -98,6 +104,12 @@ void MainWindow::MenuBTClicked(){
             gbani->setEndValue(bt->property("Enabled").toBool()?15:0);
             gbani->setEasingCurve(QEasingCurve::InOutQuad);
             gbani->start();
+        }
+        if(bt->property("Enabled").toBool()){
+            //change page
+
+            int index=bt->property("bt_index").toInt();
+            if(ui->RightStacked->currentIndex()!=index) ui->RightStacked->SwitchPageTo(index);
         }
     }
 }
