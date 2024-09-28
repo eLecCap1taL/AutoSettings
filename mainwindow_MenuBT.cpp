@@ -46,7 +46,7 @@ MenuBTStyleType MenuBTStyleType::ChangeY(int _Y){
     return MenuBTStyleType(r,g,ra,_Y);
 }
 MenuBTStyleType MainWindow::MenuBTStyle[2]={
-    MenuBTStyleType(196,212,4,0),
+    MenuBTStyleType(226,232,4,0),
     MenuBTStyleType(102,130,20,-50)
 };
 void MainWindow::Setup_MenuBT(){
@@ -111,5 +111,8 @@ void MainWindow::MenuBTClicked(){
             int index=bt->property("bt_index").toInt();
             if(ui->RightStacked->currentIndex()!=index) ui->RightStacked->SwitchPageTo(index);
         }
+    }
+    for(auto &sa:RightScrollAreas){
+        qDebug()<<sa->rect()<<Qt::endl;
     }
 }

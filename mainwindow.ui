@@ -24,187 +24,650 @@
     <normaloff>:/CS2.png</normaloff>:/CS2.png</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(225, 236, 255);</string>
+   <string notr="true">background-color: rgb(170, 255, 255);</string>
   </property>
   <widget class="QWidget" name="MainLayout">
-   <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="0,0">
-    <property name="spacing">
-     <number>0</number>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(225, 236, 255);</string>
+   </property>
+   <widget class="QWidget" name="ContentLayout" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>600</height>
+     </rect>
     </property>
-    <property name="leftMargin">
-     <number>0</number>
+    <property name="minimumSize">
+     <size>
+      <width>800</width>
+      <height>600</height>
+     </size>
     </property>
-    <property name="topMargin">
-     <number>0</number>
+    <property name="layoutDirection">
+     <enum>Qt::LayoutDirection::LeftToRight</enum>
     </property>
-    <property name="rightMargin">
-     <number>0</number>
+    <property name="styleSheet">
+     <string notr="true"/>
     </property>
-    <property name="bottomMargin">
-     <number>0</number>
-    </property>
-    <item>
-     <widget class="QWidget" name="LeftWidget" native="true">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>150</width>
-        <height>0</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>150</width>
-        <height>16777215</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <layout class="QVBoxLayout" name="LeftLayout">
-       <property name="leftMargin">
-        <number>8</number>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QWidget" name="LeftWidget" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
        </property>
-       <property name="topMargin">
-        <number>8</number>
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>0</height>
+        </size>
        </property>
-       <property name="rightMargin">
-        <number>4</number>
+       <property name="maximumSize">
+        <size>
+         <width>150</width>
+         <height>16777215</height>
+        </size>
        </property>
-       <property name="bottomMargin">
-        <number>8</number>
+       <property name="styleSheet">
+        <string notr="true"/>
        </property>
-       <item>
-        <widget class="QWidget" name="verticalWidget" native="true">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgba(255, 255, 255, 100);
-border-radius: 20px</string>
-         </property>
-         <layout class="QVBoxLayout" name="verticalLayout_2">
-          <property name="leftMargin">
-           <number>6</number>
-          </property>
-          <property name="topMargin">
-           <number>6</number>
-          </property>
-          <property name="rightMargin">
-           <number>6</number>
-          </property>
-          <property name="bottomMargin">
-           <number>6</number>
-          </property>
-          <item>
-           <widget class="QPushButton" name="MenuBT1">
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>40</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(196, 212, 255);
-color: rgb(244, 248, 253);
-border-radius: 10px</string>
-            </property>
-            <property name="text">
-             <string>CFG 设置</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="MenuBT2">
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>40</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(196, 212, 255);
-color: rgb(244, 248, 253);
-border-radius: 10px</string>
-            </property>
-            <property name="text">
-             <string>CFG 安装</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="MenuBT3">
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>40</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(196, 212, 255);
-color: rgb(244, 248, 253);
-border-radius: 10px</string>
-            </property>
-            <property name="text">
-             <string>自定义道具添加</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </item>
-    <item>
-     <widget class="QWidget" name="RightWidget" native="true">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-        <horstretch>1</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <layout class="QVBoxLayout" name="RightLayout">
-       <property name="leftMargin">
-        <number>4</number>
-       </property>
-       <property name="topMargin">
-        <number>8</number>
-       </property>
-       <property name="rightMargin">
-        <number>8</number>
-       </property>
-       <property name="bottomMargin">
-        <number>8</number>
-       </property>
-       <item>
-        <widget class="FadeQStackedWidget" name="RightStacked">
-         <property name="currentIndex">
-          <number>0</number>
-         </property>
-         <widget class="QWidget" name="RightPage0">
+       <layout class="QVBoxLayout" name="LeftLayout_7">
+        <property name="leftMargin">
+         <number>8</number>
+        </property>
+        <property name="topMargin">
+         <number>8</number>
+        </property>
+        <property name="rightMargin">
+         <number>4</number>
+        </property>
+        <property name="bottomMargin">
+         <number>8</number>
+        </property>
+        <item>
+         <widget class="QWidget" name="verticalWidget_7" native="true">
           <property name="styleSheet">
-           <string notr="true"/>
+           <string notr="true">background-color: rgba(255, 255, 255, 100);
+border-radius: 20px</string>
           </property>
-          <layout class="QVBoxLayout" name="verticalLayout_3"/>
+          <layout class="QVBoxLayout" name="verticalLayout_74">
+           <property name="leftMargin">
+            <number>6</number>
+           </property>
+           <property name="topMargin">
+            <number>6</number>
+           </property>
+           <property name="rightMargin">
+            <number>6</number>
+           </property>
+           <property name="bottomMargin">
+            <number>6</number>
+           </property>
+           <item>
+            <spacer name="verticalSpacer_43">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Preferred</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>10</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="MenuBT1_7">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(196, 212, 255);
+color: rgb(244, 248, 253);
+border-radius: 10px</string>
+             </property>
+             <property name="text">
+              <string>CFG 设置</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_44">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Preferred</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>10</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="MenuBT2_7">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(196, 212, 255);
+color: rgb(244, 248, 253);
+border-radius: 10px</string>
+             </property>
+             <property name="text">
+              <string>CFG 安装</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_45">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Preferred</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>10</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="MenuBT3_7">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(196, 212, 255);
+color: rgb(244, 248, 253);
+border-radius: 10px</string>
+             </property>
+             <property name="text">
+              <string>自定义道具添加</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_46">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
          </widget>
-         <widget class="QWidget" name="RightPage1">
-          <layout class="QVBoxLayout" name="verticalLayout_4"/>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="RightWidget" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <layout class="QVBoxLayout" name="RightLayout_7">
+        <property name="leftMargin">
+         <number>4</number>
+        </property>
+        <property name="topMargin">
+         <number>8</number>
+        </property>
+        <property name="rightMargin">
+         <number>8</number>
+        </property>
+        <property name="bottomMargin">
+         <number>8</number>
+        </property>
+        <item>
+         <widget class="FadeQStackedWidget" name="RightStacked_7">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="RightPage0_7">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_75">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QScrollArea" name="RightScrollArea0_7">
+              <property name="styleSheet">
+               <string notr="true">border:0px solid #838486;  </string>
+              </property>
+              <property name="lineWidth">
+               <number>0</number>
+              </property>
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="RightScrollArea0Content_7">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>638</width>
+                 <height>584</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_76">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QWidget" name="RightScrollArea0_Card0_7" native="true">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgba(255, 255, 255, 200);
+border-radius: 16px;</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_77">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>9</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>15</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>9</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>15</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="RightScrollArea0_Card0_Label0_7">
+                     <property name="styleSheet">
+                      <string notr="true">font: 9pt &quot;微软雅黑&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+                     </property>
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;CSRM CFG Manager 欢迎页&lt;/span&gt;&lt;/p&gt;&lt;p&gt;欢迎来到 CSRM CFG Manager！&lt;/p&gt;&lt;p&gt;CSRM CFG 是由 Cap1taL 编写的、基于轮盘的可视化 CS2 CFG 兼容方案，含有大量实用的功能，并全部进行了兼容。&lt;/p&gt;&lt;p&gt;CSRM CFG Manager 是使用 QT 重写的新生代 CSRM CFG 管理器，具有更强大的功能。&lt;/p&gt;&lt;p&gt;例如，在这里，你可以方便快捷地设置或安装你的 CSRM CFG！&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+                     </property>
+                     <property name="wordWrap">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_47">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Policy::Preferred</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>10</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QWidget" name="RightScrollArea0_Card1_7" native="true">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgba(255, 255, 255, 200);
+border-radius: 16px;</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_78">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>15</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>15</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="RightScrollArea0_Card1_Label0_7">
+                     <property name="styleSheet">
+                      <string notr="true">font: 9pt &quot;微软雅黑&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+                     </property>
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;CSRM CFG Manager 使用方法&lt;/span&gt;&lt;/p&gt;&lt;p&gt;点击左侧按钮切换页面。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_48">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="RightPage1_7">
+           <property name="styleSheet">
+            <string notr="true">border:0px solid #838486;  </string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_79">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QScrollArea" name="RightScrollArea1_7">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="RightScrollArea1Content_7">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>100</width>
+                 <height>30</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_80"/>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="RightPage2_7">
+           <layout class="QVBoxLayout" name="verticalLayout_81">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QScrollArea" name="RightScrollArea2_7">
+              <property name="styleSheet">
+               <string notr="true">border:0px solid #838486;  </string>
+              </property>
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="RightScrollArea2Content_7">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>638</width>
+                 <height>584</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_82">
+                <item>
+                 <widget class="QWidget" name="RightScrollArea2_Card0_7" native="true">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>50</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgba(255, 255, 255, 200);
+border-radius: 16px;</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_83">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>15</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>15</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="UpdateCheckLabel_7">
+                     <property name="styleSheet">
+                      <string notr="true">font: 9pt &quot;微软雅黑&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+                     </property>
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;更新检查&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;CSRM  CFG Manager 版本&lt;/span&gt;&lt;/p&gt;&lt;p&gt;当前版本：%1&lt;/p&gt;&lt;p&gt;最新版本：%2&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;CSRM CFG 版本&lt;/span&gt;&lt;/p&gt;&lt;p&gt;当前版本：%3&lt;/p&gt;&lt;p&gt;最新版本：%4&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="CheckUpdateButton_7">
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_49">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>321</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="RightPage3_7">
+           <layout class="QVBoxLayout" name="verticalLayout_84">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QScrollArea" name="RightScrollArea3_7">
+              <property name="styleSheet">
+               <string notr="true">border:0px solid #838486;  </string>
+              </property>
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="RightScrollArea3Content_7">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>638</width>
+                 <height>584</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_85"/>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
          </widget>
-         <widget class="QWidget" name="RightPage2">
-          <layout class="QVBoxLayout" name="verticalLayout_5"/>
-         </widget>
-         <widget class="QWidget" name="RightPage3">
-          <layout class="QVBoxLayout" name="verticalLayout_6"/>
-         </widget>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </item>
-   </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="OverLay" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(85, 255, 127, 100);</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <customwidgets>

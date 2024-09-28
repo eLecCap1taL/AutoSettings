@@ -1,0 +1,12 @@
+QPushButton#MenuBT1:hover
+{
+    padding-bottom:2px;
+}
+QPushButton#MenuBT2:hover
+{
+    padding-bottom:2px;
+}
+QPushButton#MenuBT3:hover
+{
+    padding-bottom:2px;
+}

@@ -30,6 +30,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         mainwindow_MenuBT.cpp
         fadeqstackedwidget.h fadeqstackedwidget.cpp
         qstylewidget.h qstylewidget.cpp
+        qstylescrollarea.h qstylescrollarea.cpp
+        qvboxlayoutwidget.h qvboxlayoutwidget.cpp
 
     )
 # Define target properties for Android with Qt 6 as:
@@ -71,6 +73,10 @@ set_target_properties(AutoSetting PROPERTIES
 )
 
 include(GNUInstallDirs)
+
+find_package(Qt6 COMPONENTS Network REQUIRED)
+target_link_libraries(AutoSetting PUBLIC Qt6::Network)
+
 
 include_directories("D:\\CFGAutoSettingsFramework\\AutoSettings")
 set(CMAKE_EXE_LINKER_FLAGS "-static")

@@ -3,8 +3,9 @@
 #include <QGraphicsOpacityEffect>
 #include <QPropertyAnimation>
 
-FadeQStackedWidget::FadeQStackedWidget(QWidget *parent)
-    : QStackedWidget{parent}
+FadeQStackedWidget::FadeQStackedWidget(QWidget *parent,int ANIMATION)
+    : QStackedWidget{parent},
+    ANIMATION_TIME(ANIMATION)
 {}
 
 void FadeQStackedWidget::SwitchPageTo(int index) {
@@ -14,6 +15,10 @@ void FadeQStackedWidget::SwitchPageTo(int index) {
     QWidget *curWidget = currentWidget();
     QWidget *nextWidget = widget(index);
 
+    auto curindex=currentIndex();
+    setCurrentIndex(index);
+    setCurrentIndex(curindex);
+
     if (curWidget) {
         isAnimating = true;
 
@@ -22,7 +27,7 @@ void FadeQStackedWidget::SwitchPageTo(int index) {
         effect->setOpacity(1.0);
 
         QPropertyAnimation *fadeOutAnimation = new QPropertyAnimation(effect, "opacity");
-        fadeOutAnimation->setDuration(300);
+        fadeOutAnimation->setDuration(ANIMATION_TIME);
         fadeOutAnimation->setStartValue(1.0);
         fadeOutAnimation->setEndValue(0.0);
         fadeOutAnimation->setEasingCurve(QEasingCurve::InOutQuad);
@@ -36,7 +41,6 @@ void FadeQStackedWidget::SwitchPageTo(int index) {
             setCurrentIndex(index);
         });
     } else {
-        setCurrentIndex(index);
         nextWidget->show();
         auto fadein=PageFadeIn(nextWidget);
         connect(fadein, &QPropertyAnimation::finished, this, [this, index, nextWidget](){
@@ -56,7 +60,7 @@ QPropertyAnimation* FadeQStackedWidget::PageFadeIn(QWidget *widget) {
     effect->setOpacity(0.0);
 
     QPropertyAnimation *animation = new QPropertyAnimation(effect, "opacity");
-    animation->setDuration(300);
+    animation->setDuration(ANIMATION_TIME);
     animation->setStartValue(0.0);
     animation->setEndValue(1.0);
     animation->setEasingCurve(QEasingCurve::InOutQuad);
@@ -67,4 +71,15 @@ QPropertyAnimation* FadeQStackedWidget::PageFadeIn(QWidget *widget) {
     });
 
     return animation;
+}
+void FadeQStackedWidget::ReFreshAllPages(){
+    // int index=currentIndex();
+    // for(int i=0;i<count();i++){
+    //     setCurrentIndex(i);
+    // }
+    // setCurrentIndex(index);
+}
+void FadeQStackedWidget::resizeEvent(QResizeEvent* event){
+    QWidget::resizeEvent(event);
+    ReFreshAllPages();
 }

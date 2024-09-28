@@ -18,7 +18,6 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     qRegisterAnimationInterpolator<MenuBTStyleType>(MenuBTAnimation);
     MainWindow w;
-    // MenuButtonSwitcher mbsw;
     w.show();
     return a.exec();
 }
