@@ -9,6 +9,8 @@ class QMessageWidget : public QWidget
 public:
     explicit QMessageWidget(QWidget *parent = nullptr);
 
+protected:
+    void resizeEvent(QResizeEvent* event)override;
 signals:
 };
 
