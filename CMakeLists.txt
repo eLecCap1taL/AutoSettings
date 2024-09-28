@@ -32,6 +32,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         qstylewidget.h qstylewidget.cpp
         qstylescrollarea.h qstylescrollarea.cpp
         qvboxlayoutwidget.h qvboxlayoutwidget.cpp
+        mainwindow_update.cpp
+        qmessagewidget.h qmessagewidget.cpp
 
     )
 # Define target properties for Android with Qt 6 as:

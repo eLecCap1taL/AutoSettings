@@ -51,6 +51,7 @@ public slots:
 private:
     Ui::MainWindow *ui;
     void Setup_MenuBT();
+    void Setup_update();
     int IsQuerying;
 
 protected:
@@ -58,6 +59,7 @@ protected:
     std::vector<QStyleScrollArea*> RightScrollAreas;
     std::vector<QVBoxLayout*> RightScrollContent;
     void showEvent(QShowEvent* event)override;
+    void resizeEvent(QResizeEvent* event)override;
 
     QString CURMANAGERVERSION = QString("v1.0");
     QString CURCSRMVERSION = QString("v2.53");

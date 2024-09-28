@@ -116,7 +116,7 @@
          <number>8</number>
         </property>
         <item>
-         <widget class="QWidget" name="verticalWidget_7" native="true">
+         <widget class="QWidget" name="verticalWidget" native="true">
           <property name="styleSheet">
            <string notr="true">background-color: rgba(255, 255, 255, 100);
 border-radius: 20px</string>
@@ -135,7 +135,7 @@ border-radius: 20px</string>
             <number>6</number>
            </property>
            <item>
-            <spacer name="verticalSpacer_43">
+            <spacer name="verticalSpacer_0">
              <property name="orientation">
               <enum>Qt::Orientation::Vertical</enum>
              </property>
@@ -151,7 +151,7 @@ border-radius: 20px</string>
             </spacer>
            </item>
            <item>
-            <widget class="QPushButton" name="MenuBT1_7">
+            <widget class="QPushButton" name="MenuBT1">
              <property name="minimumSize">
               <size>
                <width>0</width>
@@ -169,7 +169,7 @@ border-radius: 10px</string>
             </widget>
            </item>
            <item>
-            <spacer name="verticalSpacer_44">
+            <spacer name="verticalSpacer_1">
              <property name="orientation">
               <enum>Qt::Orientation::Vertical</enum>
              </property>
@@ -185,7 +185,7 @@ border-radius: 10px</string>
             </spacer>
            </item>
            <item>
-            <widget class="QPushButton" name="MenuBT2_7">
+            <widget class="QPushButton" name="MenuBT2">
              <property name="minimumSize">
               <size>
                <width>0</width>
@@ -203,7 +203,7 @@ border-radius: 10px</string>
             </widget>
            </item>
            <item>
-            <spacer name="verticalSpacer_45">
+            <spacer name="verticalSpacer_2">
              <property name="orientation">
               <enum>Qt::Orientation::Vertical</enum>
              </property>
@@ -219,7 +219,7 @@ border-radius: 10px</string>
             </spacer>
            </item>
            <item>
-            <widget class="QPushButton" name="MenuBT3_7">
+            <widget class="QPushButton" name="MenuBT3">
              <property name="minimumSize">
               <size>
                <width>0</width>
@@ -237,7 +237,7 @@ border-radius: 10px</string>
             </widget>
            </item>
            <item>
-            <spacer name="verticalSpacer_46">
+            <spacer name="verticalSpacer_3">
              <property name="orientation">
               <enum>Qt::Orientation::Vertical</enum>
              </property>
@@ -277,11 +277,11 @@ border-radius: 10px</string>
          <number>8</number>
         </property>
         <item>
-         <widget class="FadeQStackedWidget" name="RightStacked_7">
+         <widget class="FadeQStackedWidget" name="RightStacked">
           <property name="currentIndex">
            <number>0</number>
           </property>
-          <widget class="QWidget" name="RightPage0_7">
+          <widget class="QWidget" name="RightPage0">
            <property name="styleSheet">
             <string notr="true"/>
            </property>
@@ -302,7 +302,7 @@ border-radius: 10px</string>
              <number>0</number>
             </property>
             <item>
-             <widget class="QScrollArea" name="RightScrollArea0_7">
+             <widget class="QScrollArea" name="RightScrollArea0">
               <property name="styleSheet">
                <string notr="true">border:0px solid #838486;  </string>
               </property>
@@ -312,7 +312,7 @@ border-radius: 10px</string>
               <property name="widgetResizable">
                <bool>true</bool>
               </property>
-              <widget class="QWidget" name="RightScrollArea0Content_7">
+              <widget class="QWidget" name="RightScrollArea0Content">
                <property name="enabled">
                 <bool>true</bool>
                </property>
@@ -341,7 +341,7 @@ border-radius: 10px</string>
                  <number>0</number>
                 </property>
                 <item>
-                 <widget class="QWidget" name="RightScrollArea0_Card0_7" native="true">
+                 <widget class="QWidget" name="RightScrollArea0_Card0" native="true">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                     <horstretch>0</horstretch>
@@ -375,7 +375,7 @@ border-radius: 16px;</string>
                     <number>15</number>
                    </property>
                    <item>
-                    <widget class="QLabel" name="RightScrollArea0_Card0_Label0_7">
+                    <widget class="QLabel" name="RightScrollArea0_Card0_Label0">
                      <property name="styleSheet">
                       <string notr="true">font: 9pt &quot;微软雅黑&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
@@ -395,7 +395,7 @@ background-color: rgba(255, 255, 255, 0);</string>
                  </widget>
                 </item>
                 <item>
-                 <spacer name="verticalSpacer_47">
+                 <spacer name="verticalSpacer_4">
                   <property name="orientation">
                    <enum>Qt::Orientation::Vertical</enum>
                   </property>
@@ -411,7 +411,7 @@ background-color: rgba(255, 255, 255, 0);</string>
                  </spacer>
                 </item>
                 <item>
-                 <widget class="QWidget" name="RightScrollArea0_Card1_7" native="true">
+                 <widget class="QWidget" name="RightScrollArea0_Card1" native="true">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                     <horstretch>0</horstretch>
@@ -439,7 +439,7 @@ border-radius: 16px;</string>
                     <number>15</number>
                    </property>
                    <item>
-                    <widget class="QLabel" name="RightScrollArea0_Card1_Label0_7">
+                    <widget class="QLabel" name="RightScrollArea0_Card1_Label0">
                      <property name="styleSheet">
                       <string notr="true">font: 9pt &quot;微软雅黑&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
@@ -453,7 +453,7 @@ background-color: rgba(255, 255, 255, 0);</string>
                  </widget>
                 </item>
                 <item>
-                 <spacer name="verticalSpacer_48">
+                 <spacer name="verticalSpacer_5">
                   <property name="orientation">
                    <enum>Qt::Orientation::Vertical</enum>
                   </property>
@@ -471,7 +471,7 @@ background-color: rgba(255, 255, 255, 0);</string>
             </item>
            </layout>
           </widget>
-          <widget class="QWidget" name="RightPage1_7">
+          <widget class="QWidget" name="RightPage1">
            <property name="styleSheet">
             <string notr="true">border:0px solid #838486;  </string>
            </property>
@@ -492,17 +492,17 @@ background-color: rgba(255, 255, 255, 0);</string>
              <number>0</number>
             </property>
             <item>
-             <widget class="QScrollArea" name="RightScrollArea1_7">
+             <widget class="QScrollArea" name="RightScrollArea1">
               <property name="widgetResizable">
                <bool>true</bool>
               </property>
-              <widget class="QWidget" name="RightScrollArea1Content_7">
+              <widget class="QWidget" name="RightScrollArea1Content">
                <property name="geometry">
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>100</width>
-                 <height>30</height>
+                 <width>638</width>
+                 <height>584</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_80"/>
@@ -511,7 +511,7 @@ background-color: rgba(255, 255, 255, 0);</string>
             </item>
            </layout>
           </widget>
-          <widget class="QWidget" name="RightPage2_7">
+          <widget class="QWidget" name="RightPage2">
            <layout class="QVBoxLayout" name="verticalLayout_81">
             <property name="spacing">
              <number>0</number>
@@ -529,14 +529,14 @@ background-color: rgba(255, 255, 255, 0);</string>
              <number>0</number>
             </property>
             <item>
-             <widget class="QScrollArea" name="RightScrollArea2_7">
+             <widget class="QScrollArea" name="RightScrollArea2">
               <property name="styleSheet">
                <string notr="true">border:0px solid #838486;  </string>
               </property>
               <property name="widgetResizable">
                <bool>true</bool>
               </property>
-              <widget class="QWidget" name="RightScrollArea2Content_7">
+              <widget class="QWidget" name="RightScrollArea2Content">
                <property name="geometry">
                 <rect>
                  <x>0</x>
@@ -547,7 +547,7 @@ background-color: rgba(255, 255, 255, 0);</string>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_82">
                 <item>
-                 <widget class="QWidget" name="RightScrollArea2_Card0_7" native="true">
+                 <widget class="QWidget" name="RightScrollArea2_Card0" native="true">
                   <property name="minimumSize">
                    <size>
                     <width>0</width>
@@ -569,7 +569,7 @@ border-radius: 16px;</string>
                     <number>15</number>
                    </property>
                    <item>
-                    <widget class="QLabel" name="UpdateCheckLabel_7">
+                    <widget class="QLabel" name="UpdateCheckLabel">
                      <property name="styleSheet">
                       <string notr="true">font: 9pt &quot;微软雅黑&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
@@ -580,7 +580,7 @@ background-color: rgba(255, 255, 255, 0);</string>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="CheckUpdateButton_7">
+                    <widget class="QPushButton" name="CheckUpdateButton">
                      <property name="text">
                       <string>PushButton</string>
                      </property>
@@ -590,7 +590,7 @@ background-color: rgba(255, 255, 255, 0);</string>
                  </widget>
                 </item>
                 <item>
-                 <spacer name="verticalSpacer_49">
+                 <spacer name="verticalSpacer_6">
                   <property name="orientation">
                    <enum>Qt::Orientation::Vertical</enum>
                   </property>
@@ -608,7 +608,7 @@ background-color: rgba(255, 255, 255, 0);</string>
             </item>
            </layout>
           </widget>
-          <widget class="QWidget" name="RightPage3_7">
+          <widget class="QWidget" name="RightPage3">
            <layout class="QVBoxLayout" name="verticalLayout_84">
             <property name="spacing">
              <number>0</number>
@@ -626,14 +626,14 @@ background-color: rgba(255, 255, 255, 0);</string>
              <number>0</number>
             </property>
             <item>
-             <widget class="QScrollArea" name="RightScrollArea3_7">
+             <widget class="QScrollArea" name="RightScrollArea3">
               <property name="styleSheet">
                <string notr="true">border:0px solid #838486;  </string>
               </property>
               <property name="widgetResizable">
                <bool>true</bool>
               </property>
-              <widget class="QWidget" name="RightScrollArea3Content_7">
+              <widget class="QWidget" name="RightScrollArea3Content">
                <property name="geometry">
                 <rect>
                  <x>0</x>
@@ -655,7 +655,7 @@ background-color: rgba(255, 255, 255, 0);</string>
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="OverLay" native="true">
+   <widget class="QMessageWidget" name="OverLay" native="true">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -665,7 +665,7 @@ background-color: rgba(255, 255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(85, 255, 127, 100);</string>
+     <string notr="true">background-color: rgba(85, 255, 127, 0);</string>
     </property>
    </widget>
   </widget>
@@ -675,6 +675,12 @@ background-color: rgba(255, 255, 255, 0);</string>
    <class>FadeQStackedWidget</class>
    <extends>QStackedWidget</extends>
    <header location="global">fadeqstackedwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QMessageWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">qmessagewidget.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

@@ -15,6 +15,7 @@ void FadeQStackedWidget::SwitchPageTo(int index) {
     QWidget *curWidget = currentWidget();
     QWidget *nextWidget = widget(index);
 
+    //refresh before animation
     auto curindex=currentIndex();
     setCurrentIndex(index);
     setCurrentIndex(curindex);
