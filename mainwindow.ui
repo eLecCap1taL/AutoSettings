@@ -279,7 +279,7 @@ border-radius: 10px</string>
         <item>
          <widget class="FadeQStackedWidget" name="RightStacked">
           <property name="currentIndex">
-           <number>0</number>
+           <number>2</number>
           </property>
           <widget class="QWidget" name="RightPage0">
            <property name="styleSheet">
@@ -501,8 +501,8 @@ background-color: rgba(255, 255, 255, 0);</string>
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>638</width>
-                 <height>584</height>
+                 <width>100</width>
+                 <height>30</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_80"/>
@@ -581,8 +581,25 @@ background-color: rgba(255, 255, 255, 0);</string>
                    </item>
                    <item>
                     <widget class="QPushButton" name="CheckUpdateButton">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>126</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(196, 212, 255);
+color: rgb(244, 248, 253);
+border-radius: 10px</string>
+                     </property>
                      <property name="text">
-                      <string>PushButton</string>
+                      <string>检查更新</string>
                      </property>
                     </widget>
                    </item>
@@ -638,8 +655,8 @@ background-color: rgba(255, 255, 255, 0);</string>
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>638</width>
-                 <height>584</height>
+                 <width>100</width>
+                 <height>30</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_85"/>
@@ -655,7 +672,7 @@ background-color: rgba(255, 255, 255, 0);</string>
      </item>
     </layout>
    </widget>
-   <widget class="QMessageWidget" name="OverLay" native="true">
+   <widget class="QMessageWidget" name="Overlay" native="true">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -665,7 +682,7 @@ background-color: rgba(255, 255, 255, 0);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(85, 255, 127, 0);</string>
+     <string notr="true">background-color: rgba(85, 255, 255,0);</string>
     </property>
    </widget>
   </widget>
@@ -680,7 +697,7 @@ background-color: rgba(255, 255, 255, 0);</string>
   <customwidget>
    <class>QMessageWidget</class>
    <extends>QWidget</extends>
-   <header location="global">qmessagewidget.h</header>
+   <header>qmessagewidget.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

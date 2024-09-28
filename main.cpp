@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 #include <QPropertyAnimation>
-
 #include <QApplication>
 
 QVariant MenuBTAnimation(const MenuBTStyleType &start,const MenuBTStyleType &end,qreal dt){

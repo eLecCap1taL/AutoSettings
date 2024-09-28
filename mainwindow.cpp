@@ -11,7 +11,6 @@
 #include <QVBoxLayout>
 #include <QFile>
 #include <QTimer>
-#define SHOWOVERLAY
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -25,13 +24,7 @@ MainWindow::MainWindow(QWidget *parent)
     this->setStyleSheet(styleSheet);
 
     //Setup Overlay
-    ui->OverLay->setAttribute(Qt::WA_TransparentForMouseEvents);
-
-    #ifdef SHOWOVERLAY
-    ui->OverLay->setStyleSheet("background-color: rgba(85, 255, 127, 0)");
-    #else
-    ui->OverLay->setStyleSheet("background-color: rgba(85, 255, 127, 100)");
-    #endif
+    ui->Overlay->setAttribute(Qt::WA_TransparentForMouseEvents);
 
     Setup_MenuBT();
     Setup_update();
@@ -49,7 +42,7 @@ void MainWindow::resizeEvent(QResizeEvent* event){
     QWidget::resizeEvent(event);
 
     ui->ContentLayout->setGeometry(ui->MainLayout->rect());
-    ui->OverLay->setGeometry(ui->MainLayout->rect());
+    ui->Overlay->setGeometry(ui->MainLayout->rect());
 }
 
 

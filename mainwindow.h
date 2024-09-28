@@ -69,3 +69,5 @@ protected:
 private slots:
 };
 #endif // MAINWINDOW_H
+
+#define POPTEXT(x,y) ui->Overlay->AddMessage(tr(x),y);

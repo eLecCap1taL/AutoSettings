@@ -53,20 +53,31 @@ bool MainWindow::QueryQStringFromUrl(const QUrl &url,std::function<void(const QS
     return true;
 }
 void MainWindow::UpdateCheckButtonClicked(){
+    qDebug()<<ui->MenuBT1->styleSheet()<<Qt::endl;
+    qDebug()<<ui->MenuBT2->styleSheet()<<Qt::endl;
+    POPTEXT("查询最新版本……",QPopMessage::NORMAL);
     bool firstqr=QueryQStringFromUrl(QUrl("https://eleccap1tal.github.io/CSRM/ManagerVersion.html"),[this](const QStringRequest& ret){
-        qDebug()<<ret.first<<' '<<ret.second<<Qt::endl;
-        if(ret.first==false)   return ;
+        if(ret.first==false){
+            POPTEXT("获取 Manager 版本失败",QPopMessage::ERROR);
+            return ;
+        }
+        POPTEXT("获取 Manager 版本成功",QPopMessage::SUCCESS);
         this->LSTMANAGERVERSION=ret.second;
         this->RefreshCheckLabel();
     },5000,false);
-    if(!firstqr)    return ;
+    if(!firstqr){
+        POPTEXT("上一次请求尚未结束",QPopMessage::WARING);
+        return ;
+    }
     QueryQStringFromUrl(QUrl("https://eleccap1tal.github.io/CSRM/CSRMVersion.html"),[this](const QStringRequest& ret){
-        qDebug()<<ret.first<<' '<<ret.second<<Qt::endl;
-        if(ret.first==false)   return ;
+        if(ret.first==false){
+            POPTEXT("获取 CSRM 版本失败",QPopMessage::ERROR);
+            return ;
+        }
+        POPTEXT("获取 CSRM 版本成功",QPopMessage::SUCCESS);
         this->LSTCSRMVERSION=ret.second;
         this->RefreshCheckLabel();
     },5000,true);
-    qDebug()<<"Done\n";
 }
 void MainWindow::Setup_update(){
     connect(ui->CheckUpdateButton,&QPushButton::clicked,this,&MainWindow::UpdateCheckButtonClicked);
