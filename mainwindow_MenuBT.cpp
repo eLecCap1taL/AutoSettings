@@ -128,7 +128,4 @@ void MainWindow::MenuBTClicked(){
             if(ui->RightStacked->currentIndex()!=index) ui->RightStacked->SwitchPageTo(index);
         }
     }
-    for(auto &sa:RightScrollAreas){
-        qDebug()<<sa->rect()<<Qt::endl;
-    }
 }

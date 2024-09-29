@@ -29,12 +29,13 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MainResource.qrc
         mainwindow_MenuBT.cpp
         fadeqstackedwidget.h fadeqstackedwidget.cpp
-        qstylewidget.h qstylewidget.cpp
-        qstylescrollarea.h qstylescrollarea.cpp
+
+
 
         mainwindow_update.cpp
         qmessagewidget.h qmessagewidget.cpp
         qpopmessage.h qpopmessage.cpp
+
 
 
     )

@@ -6,7 +6,7 @@
 #include <QScrollArea>
 #include <qboxlayout.h>
 #include <vector>
-#include "qstylescrollarea.h"
+// #include "qstylescrollarea.h"
 #include <QtNetwork/QNetworkAccessManager>
 #include <QtNetwork/QNetworkReply>
 #include <QtNetwork/QNetworkRequest>
@@ -56,8 +56,6 @@ private:
 
 protected:
     std::vector<QPushButton*> MenuBTls;
-    std::vector<QStyleScrollArea*> RightScrollAreas;
-    std::vector<QVBoxLayout*> RightScrollContent;
     void showEvent(QShowEvent* event)override;
     void resizeEvent(QResizeEvent* event)override;
 
