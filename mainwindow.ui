@@ -778,6 +778,8 @@ border-radius: 10px</string>
       </widget>
      </item>
     </layout>
+    <zorder>RightWidget</zorder>
+    <zorder>LeftWidget</zorder>
    </widget>
    <widget class="QMessageWidget" name="Overlay" native="true">
     <property name="geometry">

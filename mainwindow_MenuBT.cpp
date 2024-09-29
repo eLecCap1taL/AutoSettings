@@ -59,7 +59,6 @@ void MainWindow::Setup_MenuBT(){
     ui->MenuBT1->setProperty("bt_index",1);
     ui->MenuBT2->setProperty("bt_index",2);
     ui->MenuBT3->setProperty("bt_index",3);
-
     for(auto &bt:MenuBTls){
         if(bt->objectName()=="MenuBT0"){
             bt->setProperty("Enabled",1);
@@ -71,7 +70,7 @@ void MainWindow::Setup_MenuBT(){
             shadow->setBlurRadius(15);
             shadow->setXOffset(0);
             shadow->setYOffset(0);
-            bt->setGraphicsEffect(shadow);
+            // bt->setGraphicsEffect(shadow);
         }else{
             bt->setProperty("Enabled",0);
             bt->setProperty("LstEnabled",0);
@@ -82,9 +81,10 @@ void MainWindow::Setup_MenuBT(){
             shadow->setBlurRadius(0);
             shadow->setXOffset(0);
             shadow->setYOffset(0);
-            bt->setGraphicsEffect(shadow);
+            // bt->setGraphicsEffect(shadow);
         }
     }
+    return ;
 
     connect(ui->MenuBT0, SIGNAL(clicked()), this, SLOT(MenuBTClicked()));
     connect(ui->MenuBT1, SIGNAL(clicked()), this, SLOT(MenuBTClicked()));

@@ -21,13 +21,19 @@ MainWindow::MainWindow(QWidget *parent)
     QFile file(":/style.qss");
     file.open(QFile::ReadOnly);
     QString styleSheet=tr(file.readAll());
-    this->setStyleSheet(styleSheet);
+    // this->setStyleSheet(styleSheet);
+
+    //Setup Menu
+    auto ge=new QGraphicsDropShadowEffect(this);
+    ge->setBlurRadius(80);
+    ge->setColor(QColor(0, 0, 0, 30));
+    ui->LeftWidget->setGraphicsEffect(ge);
 
     //Setup Overlay
     ui->Overlay->setAttribute(Qt::WA_TransparentForMouseEvents);
 
     Setup_MenuBT();
-    Setup_update();
+    // Setup_update();
 
     ui->RightStacked->setCurrentIndex(0);
 }
