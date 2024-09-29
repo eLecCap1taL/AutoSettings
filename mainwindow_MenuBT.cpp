@@ -50,27 +50,43 @@ MenuBTStyleType MainWindow::MenuBTStyle[2]={
     MenuBTStyleType(102,130,20,-50)
 };
 void MainWindow::Setup_MenuBT(){
+    MenuBTls.push_back(ui->MenuBT0);
     MenuBTls.push_back(ui->MenuBT1);
     MenuBTls.push_back(ui->MenuBT2);
     MenuBTls.push_back(ui->MenuBT3);
 
+    ui->MenuBT0->setProperty("bt_index",0);
     ui->MenuBT1->setProperty("bt_index",1);
     ui->MenuBT2->setProperty("bt_index",2);
     ui->MenuBT3->setProperty("bt_index",3);
 
     for(auto &bt:MenuBTls){
-        bt->setProperty("Enabled",0);
-        bt->setProperty("LstEnabled",0);
-        bt->setProperty("styleSheet",MenuBTStyle[0].styleSheet());
-        bt->setProperty("my_styleSheet",QVariant::fromValue(MenuBTStyle[0].ChangeY(bt->y())));
-        bt->setProperty("styleSheet",bt->property("my_styleSheet").value<MenuBTStyleType>().styleSheet());
-        QGraphicsDropShadowEffect *shadow = new QGraphicsDropShadowEffect(this);
-        shadow->setBlurRadius(0);
-        shadow->setXOffset(0);
-        shadow->setYOffset(0);
-        bt->setGraphicsEffect(shadow);
+        if(bt->objectName()=="MenuBT0"){
+            bt->setProperty("Enabled",1);
+            bt->setProperty("LstEnabled",1);
+            bt->setProperty("styleSheet",MenuBTStyle[1].styleSheet());
+            bt->setProperty("my_styleSheet",QVariant::fromValue(MenuBTStyle[1].ChangeY(bt->y())));
+            bt->setProperty("styleSheet",bt->property("my_styleSheet").value<MenuBTStyleType>().styleSheet());
+            QGraphicsDropShadowEffect *shadow = new QGraphicsDropShadowEffect(this);
+            shadow->setBlurRadius(15);
+            shadow->setXOffset(0);
+            shadow->setYOffset(0);
+            bt->setGraphicsEffect(shadow);
+        }else{
+            bt->setProperty("Enabled",0);
+            bt->setProperty("LstEnabled",0);
+            bt->setProperty("styleSheet",MenuBTStyle[0].styleSheet());
+            bt->setProperty("my_styleSheet",QVariant::fromValue(MenuBTStyle[0].ChangeY(bt->y())));
+            bt->setProperty("styleSheet",bt->property("my_styleSheet").value<MenuBTStyleType>().styleSheet());
+            QGraphicsDropShadowEffect *shadow = new QGraphicsDropShadowEffect(this);
+            shadow->setBlurRadius(0);
+            shadow->setXOffset(0);
+            shadow->setYOffset(0);
+            bt->setGraphicsEffect(shadow);
+        }
     }
 
+    connect(ui->MenuBT0, SIGNAL(clicked()), this, SLOT(MenuBTClicked()));
     connect(ui->MenuBT1, SIGNAL(clicked()), this, SLOT(MenuBTClicked()));
     connect(ui->MenuBT2, SIGNAL(clicked()), this, SLOT(MenuBTClicked()));
     connect(ui->MenuBT3, SIGNAL(clicked()), this, SLOT(MenuBTClicked()));

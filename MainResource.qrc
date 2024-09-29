@@ -2,5 +2,6 @@
     <qresource prefix="/">
         <file>CS2.png</file>
         <file>style.qss</file>
+        <file>cs2.svg</file>
     </qresource>
 </RCC>
