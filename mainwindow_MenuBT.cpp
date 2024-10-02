@@ -7,11 +7,17 @@
 #include <QParallelAnimationGroup>
 
 void MainWindow::Setup_MenuBT(){
-    //Setup Menu
+    //Setup Menu Shadow
     auto ge=new QGraphicsDropShadowEffect(this);
     ge->setBlurRadius(80);
     ge->setColor(QColor(0, 0, 0, 30));
     ui->LeftWidget->setGraphicsEffect(ge);
+
+    //Setup Pages scroll
+    ui->RightScrollArea0->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    ui->RightScrollArea1->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    ui->RightScrollArea2->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    ui->RightScrollArea3->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
     MenuBT = new QUniqueButtonGroup(this);
     MenuBT->addButton(ui->MenuBT0);

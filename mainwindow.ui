@@ -509,7 +509,7 @@ border-bottom-left-radius: 0px;
            <string notr="true">background-color: rgba(255,255,255,0);</string>
           </property>
           <property name="currentIndex">
-           <number>1</number>
+           <number>3</number>
           </property>
           <widget class="QWidget" name="RightPage0">
            <property name="styleSheet">
@@ -601,7 +601,7 @@ border-bottom-left-radius: 0px;
                    </size>
                   </property>
                   <property name="text">
-                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:22pt; font-weight:700;&quot;&gt;CSRM 欢迎页&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt; font-weight:700;&quot;&gt;欢迎来到 CSRM CFG Manager&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                  </widget>
                 </item>
@@ -700,7 +700,7 @@ border:1px solid #EFF0F6;
 background-color: rgba(255, 255, 255, 0);</string>
                      </property>
                      <property name="text">
-                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;欢迎来到 CSRM CFG Manager！&lt;/p&gt;&lt;p&gt;CSRM CFG 是由 Cap1taL 编写的、基于轮盘的可视化 CS2 CFG 兼容方案，含有大量实用的功能，并全部进行了兼容。&lt;/p&gt;&lt;p&gt;CSRM CFG Manager 是使用 QT 重写的新生代 CSRM CFG 管理器，具有更强大的功能。&lt;/p&gt;&lt;p&gt;例如，在这里，你可以方便快捷地设置或安装你的 CSRM CFG！&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;CSRM CFG 是由 Cap1taL 编写的、基于轮盘的可视化 CS2 CFG 兼容方案，含有大量实用的功能，并全部进行了兼容。&lt;/p&gt;&lt;p&gt;CSRM CFG Manager 是使用 QT 重写的新生代 CSRM CFG 管理器，具有更强大的功能。&lt;/p&gt;&lt;p&gt;例如，在这里，你可以方便快捷地设置或安装你的 CSRM CFG！&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                      </property>
                      <property name="alignment">
                       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
@@ -866,7 +866,7 @@ background-color: rgba(255, 255, 255, 0);</string>
                  </spacer>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label">
+                 <widget class="QLabel" name="RightPage1_Title">
                   <property name="minimumSize">
                    <size>
                     <width>0</width>
@@ -874,7 +874,7 @@ background-color: rgba(255, 255, 255, 0);</string>
                    </size>
                   </property>
                   <property name="text">
-                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:22pt; font-weight:700;&quot;&gt;CFG 设置&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt; font-weight:700;&quot;&gt;CFG 设置&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                  </widget>
                 </item>
@@ -1026,7 +1026,7 @@ background-color: rgba(255, 255, 255, 0);</string>
                    </size>
                   </property>
                   <property name="text">
-                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:22pt; font-weight:700;&quot;&gt;CFG 安装&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt; font-weight:700;&quot;&gt;CFG 安装&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                  </widget>
                 </item>
@@ -1263,7 +1263,7 @@ border:1px solid rgb(207, 208, 213)</string>
                    </size>
                   </property>
                   <property name="text">
-                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:22pt; font-weight:700;&quot;&gt;自定义道具添加&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt; font-weight:700;&quot;&gt;自定义道具添加&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                   </property>
                  </widget>
                 </item>
