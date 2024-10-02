@@ -26,13 +26,13 @@ void MainWindow::Setup_Frameless(){
     // setStyleSheet("border: 2px solid black; border-radius: 25px; background-color: white;");
     setWindowFlags(Qt::FramelessWindowHint);
     setAttribute(Qt::WA_TranslucentBackground);
-    ui->MainLayout->setAttribute(Qt::WA_TranslucentBackground);
+    // ui->MainLayout->setAttribute(Qt::WA_TranslucentBackground);
 
-    QGraphicsDropShadowEffect *effect = new QGraphicsDropShadowEffect(this);
-    effect->setOffset(0, 0);          //设置向哪个方向产生阴影效果(dx,dy)，特别地，(0,0)代表向四周发散
-    effect->setColor(Qt::gray);       //设置阴影颜色，也可以setColor(QColor(220,220,220))
-    effect->setBlurRadius(20);        //设定阴影的模糊半径，数值越大越模糊
-    ui->MainLayout->setGraphicsEffect(effect);
+    // QGraphicsDropShadowEffect *effect = new QGraphicsDropShadowEffect(this);
+    // effect->setOffset(0, 0);          //设置向哪个方向产生阴影效果(dx,dy)，特别地，(0,0)代表向四周发散
+    // effect->setColor(Qt::gray);       //设置阴影颜色，也可以setColor(QColor(220,220,220))
+    // effect->setBlurRadius(20);        //设定阴影的模糊半径，数值越大越模糊
+    // ui->MainLayout->setGraphicsEffect(effect);
 }
 // void MainWindow::paintEvent(QPaintEvent *event) {
     // QPainter painter(this);

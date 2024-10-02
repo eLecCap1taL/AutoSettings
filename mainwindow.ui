@@ -471,7 +471,7 @@ border-bottom-left-radius: 0px;
            <string notr="true">background-color: rgba(255,255,255,0);</string>
           </property>
           <property name="currentIndex">
-           <number>0</number>
+           <number>2</number>
           </property>
           <widget class="QWidget" name="RightPage0">
            <property name="styleSheet">
@@ -693,8 +693,8 @@ background-color: rgba(255, 255, 255, 0);</string>
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>100</width>
-                 <height>30</height>
+                 <width>697</width>
+                 <height>670</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_102"/>
@@ -733,8 +733,8 @@ background-color: rgba(255, 255, 255, 0);</string>
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>199</width>
-                 <height>74</height>
+                 <width>697</width>
+                 <height>670</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_104">
@@ -847,8 +847,8 @@ border-radius: 10px</string>
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>100</width>
-                 <height>30</height>
+                 <width>697</width>
+                 <height>670</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_107"/>
@@ -863,6 +863,8 @@ border-radius: 10px</string>
       </widget>
      </item>
     </layout>
+    <zorder>RightWidget</zorder>
+    <zorder>LeftWidget</zorder>
    </widget>
    <widget class="QMessageWidget" name="Overlay" native="true">
     <property name="geometry">

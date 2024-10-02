@@ -9,6 +9,11 @@ FadeQStackedWidget::FadeQStackedWidget(QWidget *parent,int ANIMATION)
 {}
 void FadeQStackedWidget::SwitchPageToSlot(){
     qDebug()<<sender()->objectName()<<"\n";
+    // if(sender()->objectName()=="MenuBT0")   setCurrentIndex(0);
+    // if(sender()->objectName()=="MenuBT1")   setCurrentIndex(1);
+    // if(sender()->objectName()=="MenuBT2")   setCurrentIndex(2);
+    // if(sender()->objectName()=="MenuBT3")   setCurrentIndex(3);
+    // return ;
     if(sender()->objectName()=="MenuBT0")   SwitchPageTo(0);
     if(sender()->objectName()=="MenuBT1")   SwitchPageTo(1);
     if(sender()->objectName()=="MenuBT2")   SwitchPageTo(2);
