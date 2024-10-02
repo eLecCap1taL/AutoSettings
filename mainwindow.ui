@@ -414,6 +414,44 @@ font-weight: bold;</string>
             </widget>
            </item>
            <item>
+            <spacer name="verticalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Policy::Preferred</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>8</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QKeepButton" name="MenuBT4">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(77,77,77);
+border-radius: 10px;
+text-align: left;
+padding-left: 15px;
+font: 10pt Microsoft YaHei UI;
+font-weight: bold;</string>
+             </property>
+             <property name="text">
+              <string>退出 Manager</string>
+             </property>
+            </widget>
+           </item>
+           <item>
             <spacer name="verticalSpacer">
              <property name="orientation">
               <enum>Qt::Orientation::Vertical</enum>
@@ -471,7 +509,7 @@ border-bottom-left-radius: 0px;
            <string notr="true">background-color: rgba(255,255,255,0);</string>
           </property>
           <property name="currentIndex">
-           <number>0</number>
+           <number>1</number>
           </property>
           <widget class="QWidget" name="RightPage0">
            <property name="styleSheet">
@@ -538,7 +576,7 @@ border-bottom-left-radius: 0px;
                    <enum>Qt::Orientation::Vertical</enum>
                   </property>
                   <property name="sizeType">
-                   <enum>QSizePolicy::Policy::Preferred</enum>
+                   <enum>QSizePolicy::Policy::Fixed</enum>
                   </property>
                   <property name="sizeHint" stdset="0">
                    <size>
@@ -549,7 +587,7 @@ border-bottom-left-radius: 0px;
                  </spacer>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label">
+                 <widget class="QLabel" name="RightPage0_Title">
                   <property name="minimumSize">
                    <size>
                     <width>0</width>
@@ -791,11 +829,117 @@ background-color: rgba(255, 255, 255, 0);</string>
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>100</width>
-                 <height>30</height>
+                 <width>630</width>
+                 <height>670</height>
                 </rect>
                </property>
-               <layout class="QVBoxLayout" name="verticalLayout_102"/>
+               <layout class="QVBoxLayout" name="verticalLayout_102">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <spacer name="verticalSpacer_25">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Policy::Preferred</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>34</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>34</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:22pt; font-weight:700;&quot;&gt;CFG 设置&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_23">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Policy::Preferred</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>10</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="Line" name="line_4">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>1</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border:1px solid rgb(228, 229, 234);  </string>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_24">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Policy::Preferred</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>28</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_21">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
               </widget>
              </widget>
             </item>
@@ -836,6 +980,104 @@ background-color: rgba(255, 255, 255, 0);</string>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_104">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <spacer name="verticalSpacer_8">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Policy::Preferred</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>34</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="RightPage2_Title">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>34</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>34</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:22pt; font-weight:700;&quot;&gt;CFG 安装&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_9">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Policy::Preferred</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>10</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="Line" name="line_2">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>1</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border:1px solid rgb(228, 229, 234);  </string>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_10">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Policy::Preferred</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>28</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
                 <item>
                  <widget class="QWidget" name="RightScrollArea2_Card0" native="true">
                   <property name="minimumSize">
@@ -845,14 +1087,23 @@ background-color: rgba(255, 255, 255, 0);</string>
                    </size>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">background-color: rgba(255, 255, 255, 200);
-border-radius: 16px;</string>
+                   <string notr="true">#RightScrollArea2_Card0{
+background-color: rgba(255, 255, 255, 200);
+border-radius: 16px;
+border:1px solid #EFF0F6;  
+}</string>
                   </property>
                   <layout class="QVBoxLayout" name="verticalLayout_105">
                    <property name="spacing">
                     <number>0</number>
                    </property>
+                   <property name="leftMargin">
+                    <number>15</number>
+                   </property>
                    <property name="topMargin">
+                    <number>15</number>
+                   </property>
+                   <property name="rightMargin">
                     <number>15</number>
                    </property>
                    <property name="bottomMargin">
@@ -870,6 +1121,22 @@ background-color: rgba(255, 255, 255, 0);</string>
                     </widget>
                    </item>
                    <item>
+                    <spacer name="verticalSpacer_14">
+                     <property name="orientation">
+                      <enum>Qt::Orientation::Vertical</enum>
+                     </property>
+                     <property name="sizeType">
+                      <enum>QSizePolicy::Policy::Preferred</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
                     <widget class="QPushButton" name="CheckUpdateButton">
                      <property name="sizePolicy">
                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -884,9 +1151,12 @@ background-color: rgba(255, 255, 255, 0);</string>
                       </size>
                      </property>
                      <property name="styleSheet">
-                      <string notr="true">background-color: rgb(196, 212, 255);
-color: rgb(244, 248, 253);
-border-radius: 10px</string>
+                      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(77,77,77);
+border-radius: 10px;
+font: 10pt Microsoft YaHei UI;
+font-weight: bold;
+border:1px solid rgb(207, 208, 213)</string>
                      </property>
                      <property name="text">
                       <string>检查更新</string>
@@ -901,10 +1171,13 @@ border-radius: 10px</string>
                   <property name="orientation">
                    <enum>Qt::Orientation::Vertical</enum>
                   </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Policy::Expanding</enum>
+                  </property>
                   <property name="sizeHint" stdset="0">
                    <size>
                     <width>20</width>
-                    <height>321</height>
+                    <height>40</height>
                    </size>
                   </property>
                  </spacer>
@@ -945,11 +1218,117 @@ border-radius: 10px</string>
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>100</width>
-                 <height>30</height>
+                 <width>630</width>
+                 <height>670</height>
                 </rect>
                </property>
-               <layout class="QVBoxLayout" name="verticalLayout_107"/>
+               <layout class="QVBoxLayout" name="verticalLayout_107">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <spacer name="verticalSpacer_16">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Policy::Preferred</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>34</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="RightPage3_Title">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>34</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:22pt; font-weight:700;&quot;&gt;自定义道具添加&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_17">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Policy::Preferred</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>10</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="Line" name="line_3">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>1</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border:1px solid rgb(228, 229, 234);  </string>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_15">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Vertical</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Policy::Preferred</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>28</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_18">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
               </widget>
              </widget>
             </item>
@@ -970,9 +1349,9 @@ border-radius: 10px</string>
     </property>
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>352</x>
       <y>0</y>
-      <width>271</width>
+      <width>591</width>
       <height>670</height>
      </rect>
     </property>

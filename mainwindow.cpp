@@ -18,32 +18,34 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow),
     EDGERESIZE(20)
 {
-
     ui->setupUi(this);
 
-    Setup_Frameless();
+    QGraphicsOpacityEffect *opacityEffect = new QGraphicsOpacityEffect(this);
+    ui->ContentLayout->setGraphicsEffect(opacityEffect);
+
+    // 创建动画
+    QPropertyAnimation *animation = new QPropertyAnimation(opacityEffect, "opacity");
+    animation->setDuration(500);
+    animation->setStartValue(0);
+    animation->setEndValue(1);
+    animation->start();
+
+    connect(animation,&QPropertyAnimation::finished,this,[this]()->void{
+       ui->ContentLayout->setGraphicsEffect(nullptr);
+    });
 
     // Total styleSheet
     QFile file(":/style.qss");
     file.open(QFile::ReadOnly);
     QString styleSheet=tr(file.readAll());
     this->setStyleSheet(styleSheet);
-    qDebug()<<styleSheet<<"\n";
-
-    //Setup Menu
-    auto ge=new QGraphicsDropShadowEffect(this);
-    ge->setBlurRadius(80);
-    ge->setColor(QColor(0, 0, 0, 30));
-    ui->LeftWidget->setGraphicsEffect(ge);
-    // ui->verticalWidget->setAttribute(Qt::WA_TranslucentBackground);
 
     //Setup Overlay
     ui->Overlay->setAttribute(Qt::WA_TransparentForMouseEvents);
 
     Setup_MenuBT();
     Setup_update();
-
-    ui->RightStacked->setCurrentIndex(0);
+    Setup_Frameless();
 }
 MainWindow::~MainWindow()
 {

@@ -7,5 +7,6 @@
         <file>download.svg</file>
         <file>home.svg</file>
         <file>settings.svg</file>
+        <file>exit.svg</file>
     </qresource>
 </RCC>

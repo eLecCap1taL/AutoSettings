@@ -52,7 +52,8 @@ void QKeepButton::refreshStyleSheetFromProperty(){
         // set svg
         auto res=changerFromProcess->getInner(this->property("pressProcess").toReal());
         auto cl=QColor(res[1][0],res[1][1],res[1][2]);
-        QPixmap pixmap(svgPath);
+        QPixmap opixmap(svgPath);
+        QPixmap pixmap = opixmap.scaled(20, 20, Qt::KeepAspectRatio, Qt::SmoothTransformation);
         auto ef=new QGraphicsColorizeEffect(lbsvg);
         ef->setColor(cl);
         lbsvg->setGraphicsEffect(ef);
