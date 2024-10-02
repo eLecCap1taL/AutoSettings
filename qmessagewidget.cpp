@@ -1,9 +1,10 @@
 #include "qmessagewidget.h"
 #include <QTimer>
 
-QMessageWidget::QMessageWidget(QWidget *parent,int SPACEL)
+QMessageWidget::QMessageWidget(QWidget *parent,int SPACEL,int BEGINL)
     : QWidget{parent},
-    SPACE(SPACEL)
+    SPACE(SPACEL),
+    BEGIN(BEGINL)
 {}
 
 void QMessageWidget::SomeMessageDeleted(){
@@ -16,6 +17,7 @@ void QMessageWidget::SomeMessageDeleted(){
 void QMessageWidget::RebuildMessages(bool IM){
     // qDebug()<<"Rebuild Begin\n";
     auto br=this->rect().bottomRight();
+    br.setY(br.y()-BEGIN);
     for(int i=0;i<ls.size();i++){
         br-=QPoint(0,ls[i]->rect().height());
         br-=QPoint(0,SPACE);

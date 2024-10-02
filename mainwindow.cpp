@@ -69,6 +69,7 @@ void MainWindow::resizeEvent(QResizeEvent* event){
     // qDebug()<<T<<Qt::endl;
     // T=G;
     // ui->MainLayout->setGeometry(T);
+    ui->ShadowFrame->setGeometry(T);
     ui->ContentLayout->setGeometry(T);
     ui->Overlay->setGeometry(T);
 }

@@ -9,7 +9,7 @@ class QMessageWidget : public QWidget
 {
     Q_OBJECT
 public:
-    explicit QMessageWidget(QWidget *parent = nullptr,int SPACEL = 10);
+    explicit QMessageWidget(QWidget *parent = nullptr,int SPACEL = 10,int BEGIN = 30);
     void AddMessage(const QString tx,int status = 0);
     void RebuildMessages(bool IM = 0);
 public slots:
@@ -19,6 +19,7 @@ protected:
 
     std::deque<QPopMessage*> ls;
     int SPACE;
+    int BEGIN;
 signals:
 };
 

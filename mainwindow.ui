@@ -867,6 +867,9 @@ border-radius: 10px</string>
     <zorder>LeftWidget</zorder>
    </widget>
    <widget class="QMessageWidget" name="Overlay" native="true">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -879,6 +882,29 @@ border-radius: 10px</string>
      <string notr="true">background-color: rgba(85, 255, 255,0);</string>
     </property>
    </widget>
+   <widget class="QFrame" name="ShadowFrame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>943</width>
+      <height>670</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:25px</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+   </widget>
+   <zorder>ShadowFrame</zorder>
+   <zorder>ContentLayout</zorder>
+   <zorder>Overlay</zorder>
   </widget>
  </widget>
  <customwidgets>
