@@ -6,6 +6,7 @@
 #include <QPropertyAnimation>
 #include <QFrame>
 #include <QPoint>
+#include <QGraphicsColorizeEffect>
 
 int QPopMessage::SUCCESS=1;
 int QPopMessage::ERROR=2;
@@ -19,7 +20,7 @@ QPopMessage::QPopMessage(QWidget *parent,QString tx,int status,int LIVINGTIME,in
     moving_ani(nullptr),
     MOVED(false)
 {
-    LIVINGTIME*=(double)tx.length()/10.0;
+    LIVINGTIME*=(double)tx.length()/7.5;
     //can not exit
     if(LIVINGTIME<FADEANIMATION_TIME*2) exit(1);
 
@@ -31,6 +32,7 @@ QPopMessage::QPopMessage(QWidget *parent,QString tx,int status,int LIVINGTIME,in
     auto layout=new QVBoxLayout();
     auto lb=new QLabel(tx);
     layout->setContentsMargins(10,5,10,5);
+    // this->setStyleSheet("padding-left: 30px");
     this->setLayout(layout);
     this->setSizePolicy(QSizePolicy::Minimum,QSizePolicy::Minimum);
     if(status==1){
@@ -44,6 +46,10 @@ QPopMessage::QPopMessage(QWidget *parent,QString tx,int status,int LIVINGTIME,in
     }
     lb->setStyleSheet("background: rgba(255,255,255,0);\nfont-weight: bold;\nfont: 11pt \"微软雅黑\";\ncolor: white");
     layout->addWidget(lb);
+
+    this->setProperty("opacity",0.0);
+
+    // connect(this,&QPopMessage::Fading,this,&QPopMessage::setColor);
 
     this->Animation_Fadein();
 }
@@ -80,7 +86,14 @@ void QPopMessage::Animation_Fadeout(){
     });
     connect(ani,&QPropertyAnimation::valueChanged,this,&QPopMessage::Fading);
 }
-
+void QPopMessage::setColor(){
+    qreal dt = 1.0-this->property("opacity").toReal();
+    int alpha=100*dt;
+    auto cl=QColor(255,255,255,alpha);
+    auto g=new QGraphicsColorizeEffect(this);
+    g->setColor(cl);
+    // this->setGraphicsEffect(g);
+}
 void QPopMessage::PrepareToDeleteLater(){
     if(moving_ani!=nullptr){
         moving_ani->stop();

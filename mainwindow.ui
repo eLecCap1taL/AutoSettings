@@ -24,7 +24,7 @@
     <normaloff>:/CS2.png</normaloff>:/CS2.png</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(170, 255, 255);</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="MainLayout">
    <property name="sizePolicy">
@@ -215,20 +215,39 @@
             </spacer>
            </item>
            <item>
-            <widget class="QPushButton" name="MenuBT0">
+            <widget class="QKeepButton" name="MenuBT0">
              <property name="minimumSize">
               <size>
                <width>0</width>
                <height>40</height>
               </size>
              </property>
+             <property name="layoutDirection">
+              <enum>Qt::LayoutDirection::LeftToRight</enum>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
              <property name="styleSheet">
-              <string notr="true">background-color: rgb(196, 212, 255);
-color: rgb(244, 248, 253);
-border-radius: 10px</string>
+              <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(77,77,77);
+border-radius: 10px;
+text-align: left;
+padding-left: 15px;
+font: 10pt Microsoft YaHei UI;
+font-weight: bold;</string>
              </property>
              <property name="text">
-              <string>欢迎</string>
+              <string>欢迎页</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
              </property>
             </widget>
            </item>
@@ -249,7 +268,7 @@ border-radius: 10px</string>
             </spacer>
            </item>
            <item>
-            <widget class="QPushButton" name="MenuBT1">
+            <widget class="QKeepButton" name="MenuBT1">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -262,16 +281,29 @@ border-radius: 10px</string>
                <height>46</height>
               </size>
              </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
              <property name="styleSheet">
-              <string notr="true">background-color: rgb(196, 212, 255);
-color: rgb(244, 248, 253);
-border-radius: 10px</string>
+              <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(77,77,77);
+border-radius: 10px;
+text-align: left;
+padding-left: 15px;
+font: 10pt Microsoft YaHei UI;
+font-weight: bold;</string>
              </property>
              <property name="text">
               <string>CFG 设置</string>
              </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
              <property name="flat">
-              <bool>false</bool>
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -292,20 +324,36 @@ border-radius: 10px</string>
             </spacer>
            </item>
            <item>
-            <widget class="QPushButton" name="MenuBT2">
+            <widget class="QKeepButton" name="MenuBT2">
              <property name="minimumSize">
               <size>
                <width>0</width>
                <height>40</height>
               </size>
              </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
              <property name="styleSheet">
-              <string notr="true">background-color: rgb(196, 212, 255);
-color: rgb(244, 248, 253);
-border-radius: 10px</string>
+              <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(77,77,77);
+border-radius: 10px;
+text-align: left;
+padding-left: 15px;
+font: 10pt Microsoft YaHei UI;
+font-weight: bold;</string>
              </property>
              <property name="text">
               <string>CFG 安装</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -326,20 +374,36 @@ border-radius: 10px</string>
             </spacer>
            </item>
            <item>
-            <widget class="QPushButton" name="MenuBT3">
+            <widget class="QKeepButton" name="MenuBT3">
              <property name="minimumSize">
               <size>
                <width>0</width>
                <height>40</height>
               </size>
              </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
              <property name="styleSheet">
-              <string notr="true">background-color: rgb(196, 212, 255);
-color: rgb(244, 248, 253);
-border-radius: 10px</string>
+              <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(77,77,77);
+border-radius: 10px;
+text-align: left;
+padding-left: 15px;
+font: 10pt Microsoft YaHei UI;
+font-weight: bold;</string>
              </property>
              <property name="text">
               <string>自定义道具添加</string>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -608,8 +672,8 @@ background-color: rgba(255, 255, 255, 0);</string>
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>100</width>
-                 <height>30</height>
+                 <width>685</width>
+                 <height>654</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_80"/>
@@ -648,8 +712,8 @@ background-color: rgba(255, 255, 255, 0);</string>
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>685</width>
-                 <height>654</height>
+                 <width>199</width>
+                 <height>74</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_82">
@@ -794,8 +858,6 @@ border-radius: 10px</string>
      <string notr="true">background-color: rgba(85, 255, 255,0);</string>
     </property>
    </widget>
-   <zorder>Overlay</zorder>
-   <zorder>ContentLayout</zorder>
   </widget>
  </widget>
  <customwidgets>
@@ -810,6 +872,11 @@ border-radius: 10px</string>
    <extends>QWidget</extends>
    <header>qmessagewidget.h</header>
    <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QKeepButton</class>
+   <extends>QPushButton</extends>
+   <header location="global">qkeepbutton.h</header>
   </customwidget>
  </customwidgets>
  <resources>

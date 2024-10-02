@@ -3,5 +3,9 @@
         <file>CS2.png</file>
         <file>style.qss</file>
         <file>cs2.svg</file>
+        <file>add.svg</file>
+        <file>download.svg</file>
+        <file>home.svg</file>
+        <file>settings.svg</file>
     </qresource>
 </RCC>

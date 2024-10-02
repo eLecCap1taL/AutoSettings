@@ -35,6 +35,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         mainwindow_update.cpp
         qmessagewidget.h qmessagewidget.cpp
         qpopmessage.h qpopmessage.cpp
+        qkeepbutton.h qkeepbutton.cpp
+        quniquebuttongroup.h quniquebuttongroup.cpp
+        qqsschanger.h qqsschanger.cpp
+        mainwindow_Frameless.cpp
+
 
 
 
@@ -80,7 +85,10 @@ set_target_properties(AutoSetting PROPERTIES
 include(GNUInstallDirs)
 
 find_package(Qt6 COMPONENTS Network REQUIRED)
+find_package(QT NAMES Qt6 REQUIRED COMPONENTS Svg)
+find_package(Qt6 REQUIRED COMPONENTS Svg)
 target_link_libraries(AutoSetting PUBLIC Qt6::Network)
+target_link_libraries(AutoSetting PUBLIC Qt6::Svg)
 
 
 include_directories("D:\\CFGAutoSettingsFramework\\AutoSettings")

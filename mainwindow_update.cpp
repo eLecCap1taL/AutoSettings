@@ -56,7 +56,7 @@ void MainWindow::UpdateCheckButtonClicked(){
     qDebug()<<ui->MenuBT1->styleSheet()<<Qt::endl;
     qDebug()<<ui->MenuBT2->styleSheet()<<Qt::endl;
     POPTEXT("查询最新版本……",QPopMessage::NORMAL);
-    bool firstqr=QueryQStringFromUrl(QUrl("https://eleccap1tal.github.io/CSRM/ManagerVersion.html"),[this](const QStringRequest& ret){
+    bool firstqr=QueryQStringFromUrl(QUrl("https://cap1tal.top/CSRM/ManagerVersion.html"),[this](const QStringRequest& ret){
         if(ret.first==false){
             POPTEXT("获取 Manager 版本失败",QPopMessage::ERROR);
             return ;
@@ -69,7 +69,7 @@ void MainWindow::UpdateCheckButtonClicked(){
         POPTEXT("上一次请求尚未结束",QPopMessage::WARING);
         return ;
     }
-    QueryQStringFromUrl(QUrl("https://eleccap1tal.github.io/CSRM/CSRMVersion.html"),[this](const QStringRequest& ret){
+    QueryQStringFromUrl(QUrl("https://cap1tal.top/CSRM/CSRMVersion.html"),[this](const QStringRequest& ret){
         if(ret.first==false){
             POPTEXT("获取 CSRM 版本失败",QPopMessage::ERROR);
             return ;

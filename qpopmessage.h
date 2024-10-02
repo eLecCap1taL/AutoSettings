@@ -28,6 +28,7 @@ private:
 private slots:
     void Animation_Fadein();
     void Animation_Fadeout();
+    void setColor();
 signals:
     void FadeinFinished();
     void FadeoutFinished();

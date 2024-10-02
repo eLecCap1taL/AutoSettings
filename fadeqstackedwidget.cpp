@@ -7,9 +7,16 @@ FadeQStackedWidget::FadeQStackedWidget(QWidget *parent,int ANIMATION)
     : QStackedWidget{parent},
     ANIMATION_TIME(ANIMATION)
 {}
-
+void FadeQStackedWidget::SwitchPageToSlot(){
+    qDebug()<<sender()->objectName()<<"\n";
+    if(sender()->objectName()=="MenuBT0")   SwitchPageTo(0);
+    if(sender()->objectName()=="MenuBT1")   SwitchPageTo(1);
+    if(sender()->objectName()=="MenuBT2")   SwitchPageTo(2);
+    if(sender()->objectName()=="MenuBT3")   SwitchPageTo(3);
+}
 void FadeQStackedWidget::SwitchPageTo(int index) {
     if (index < 0 || index >= count()) exit(0);
+    if(index==currentIndex())   return ;
     if (isAnimating)    return ;
 
     QWidget *curWidget = currentWidget();
@@ -83,4 +90,7 @@ void FadeQStackedWidget::ReFreshAllPages(){
 void FadeQStackedWidget::resizeEvent(QResizeEvent* event){
     QWidget::resizeEvent(event);
     ReFreshAllPages();
+}
+bool FadeQStackedWidget::askIfAnimating(){
+    return this->isAnimating;
 }
