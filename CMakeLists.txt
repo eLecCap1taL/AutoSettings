@@ -39,6 +39,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         quniquebuttongroup.h quniquebuttongroup.cpp
         qqsschanger.h qqsschanger.cpp
         mainwindow_Frameless.cpp
+        qstylewidget.h qstylewidget.cpp
 
         # qwindowkit/
 
