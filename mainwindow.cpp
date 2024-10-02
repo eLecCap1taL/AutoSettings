@@ -21,7 +21,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->setupUi(this);
 
-    Setup_Frameless();
+    // Setup_Frameless();
 
     // Total styleSheet
     QFile file(":/style.qss");

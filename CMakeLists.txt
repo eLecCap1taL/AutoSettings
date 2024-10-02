@@ -40,6 +40,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         qqsschanger.h qqsschanger.cpp
         mainwindow_Frameless.cpp
 
+        # qwindowkit/
+
 
 
 
@@ -83,6 +85,9 @@ set_target_properties(AutoSetting PROPERTIES
 )
 
 include(GNUInstallDirs)
+
+set(QWINDOWKIT_BUILD_EXAMPLES OFF CACHE BOOL "")
+set(QWINDOWKIT_BUILD_STATIC ON CACHE BOOL "")
 
 find_package(Qt6 COMPONENTS Network REQUIRED)
 find_package(QT NAMES Qt6 REQUIRED COMPONENTS Svg)
