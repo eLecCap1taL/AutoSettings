@@ -14,6 +14,7 @@
 
 int main(int argc, char *argv[])
 {
+    QGuiApplication::setAttribute(Qt::AA_DontCreateNativeWidgetSiblings);
     QApplication a(argc, argv);
     // qRegisterAnimationInterpolator<MenuBTStyleType>(MenuBTAnimation);
     MainWindow w;

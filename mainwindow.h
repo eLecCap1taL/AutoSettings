@@ -62,13 +62,17 @@ protected:
     // void enterEvent(QEnterEvent *event) override;
     // void leaveEvent(QEvent *event) override;
     bool event(QEvent* event)override;
+    // void paintEvent(QPaintEvent *event)override;
 
     const int EDGERESIZE;
+
+    int MoveCounter;
 
     QUniqueButtonGroup* MenuBT;
     bool dragging = false;
     bool lstResizeCur;
     QPoint dragStartPos;
+    QRect dragStartGeo;
     int resizeDirection;
     QString CURMANAGERVERSION = QString("v1.0");
     QString CURCSRMVERSION = QString("v2.53");

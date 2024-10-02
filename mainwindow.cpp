@@ -16,24 +16,26 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow),
-    EDGERESIZE(10)
+    EDGERESIZE(20)
 {
 
     ui->setupUi(this);
 
-    // Setup_Frameless();
+    Setup_Frameless();
 
     // Total styleSheet
     QFile file(":/style.qss");
     file.open(QFile::ReadOnly);
     QString styleSheet=tr(file.readAll());
     this->setStyleSheet(styleSheet);
+    qDebug()<<styleSheet<<"\n";
 
     //Setup Menu
     auto ge=new QGraphicsDropShadowEffect(this);
     ge->setBlurRadius(80);
     ge->setColor(QColor(0, 0, 0, 30));
     ui->LeftWidget->setGraphicsEffect(ge);
+    // ui->verticalWidget->setAttribute(Qt::WA_TranslucentBackground);
 
     //Setup Overlay
     ui->Overlay->setAttribute(Qt::WA_TransparentForMouseEvents);
@@ -53,10 +55,22 @@ void MainWindow::showEvent(QShowEvent* event){
 void MainWindow::resizeEvent(QResizeEvent* event){
     QWidget::resizeEvent(event);
 
-    Setup_Frameless();
+    // int cornerRadius = 25;
+    // QPainterPath path;
+    // path.addRoundedRect(0, 0, width(), height(), cornerRadius, cornerRadius);
+    // setMask(QRegion(path.toFillPolygon(QTransform()).toPolygon()));
 
-    ui->ContentLayout->setGeometry(ui->MainLayout->rect());
-    ui->Overlay->setGeometry(ui->MainLayout->rect());
+    auto G=rect();
+    auto T=G;
+    T.setLeft(G.left()+10);
+    T.setRight(G.right()-10);
+    T.setTop(G.top()+10);
+    T.setBottom(G.bottom()-10);
+    // qDebug()<<T<<Qt::endl;
+    // T=G;
+    // ui->MainLayout->setGeometry(T);
+    ui->ContentLayout->setGeometry(T);
+    ui->Overlay->setGeometry(T);
 }
 
 

@@ -6,14 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>943</width>
-    <height>670</height>
+    <width>963</width>
+    <height>690</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>943</width>
-    <height>670</height>
+    <width>963</width>
+    <height>690</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -24,11 +24,11 @@
     <normaloff>:/CS2.png</normaloff>:/CS2.png</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true"/>
+   <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
   </property>
   <widget class="QWidget" name="MainLayout">
    <property name="sizePolicy">
-    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
      <horstretch>0</horstretch>
      <verstretch>0</verstretch>
     </sizepolicy>
@@ -40,7 +40,7 @@
     </size>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(249, 249, 249);</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
    </property>
    <widget class="QWidget" name="ContentLayout" native="true">
     <property name="geometry">
@@ -100,7 +100,13 @@
         </size>
        </property>
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">QWidget#LeftWidget{
+background-color: rgb(255, 255, 255);
+border-top-left-radius: 25px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+border-bottom-left-radius: 25px;
+}</string>
        </property>
        <layout class="QVBoxLayout" name="LeftLayout_7">
         <property name="spacing">
@@ -124,7 +130,7 @@
            <enum>Qt::LayoutDirection::LeftToRight</enum>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255);</string>
+           <string notr="true"/>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_74">
            <property name="spacing">
@@ -408,7 +414,7 @@ font-weight: bold;</string>
             </widget>
            </item>
            <item>
-            <spacer name="verticalSpacer_3">
+            <spacer name="verticalSpacer">
              <property name="orientation">
               <enum>Qt::Orientation::Vertical</enum>
              </property>
@@ -434,21 +440,36 @@ font-weight: bold;</string>
          <verstretch>0</verstretch>
         </sizepolicy>
        </property>
-       <layout class="QVBoxLayout" name="RightLayout_7">
+       <property name="styleSheet">
+        <string notr="true">QWidget#RightWidget{
+background-color: rgb(249, 249, 249);
+border-top-left-radius: 0px;
+border-top-right-radius: 25px;
+border-bottom-right-radius: 25px;
+border-bottom-left-radius: 0px;
+}</string>
+       </property>
+       <layout class="QVBoxLayout" name="RightLayout_9">
+        <property name="spacing">
+         <number>0</number>
+        </property>
         <property name="leftMargin">
-         <number>4</number>
+         <number>0</number>
         </property>
         <property name="topMargin">
-         <number>8</number>
+         <number>0</number>
         </property>
         <property name="rightMargin">
-         <number>8</number>
+         <number>0</number>
         </property>
         <property name="bottomMargin">
-         <number>8</number>
+         <number>0</number>
         </property>
         <item>
          <widget class="FadeQStackedWidget" name="RightStacked">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255,255,255,0);</string>
+          </property>
           <property name="currentIndex">
            <number>0</number>
           </property>
@@ -456,7 +477,7 @@ font-weight: bold;</string>
            <property name="styleSheet">
             <string notr="true"/>
            </property>
-           <layout class="QVBoxLayout" name="verticalLayout_75">
+           <layout class="QVBoxLayout" name="verticalLayout_97">
             <property name="spacing">
              <number>0</number>
             </property>
@@ -491,11 +512,11 @@ font-weight: bold;</string>
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>685</width>
-                 <height>654</height>
+                 <width>697</width>
+                 <height>670</height>
                 </rect>
                </property>
-               <layout class="QVBoxLayout" name="verticalLayout_76">
+               <layout class="QVBoxLayout" name="verticalLayout_98">
                 <property name="spacing">
                  <number>0</number>
                 </property>
@@ -529,7 +550,7 @@ font-weight: bold;</string>
                    <string notr="true">background-color: rgba(255, 255, 255, 200);
 border-radius: 16px;</string>
                   </property>
-                  <layout class="QVBoxLayout" name="verticalLayout_77">
+                  <layout class="QVBoxLayout" name="verticalLayout_99">
                    <property name="spacing">
                     <number>0</number>
                    </property>
@@ -566,7 +587,7 @@ background-color: rgba(255, 255, 255, 0);</string>
                  </widget>
                 </item>
                 <item>
-                 <spacer name="verticalSpacer_4">
+                 <spacer name="verticalSpacer_11">
                   <property name="orientation">
                    <enum>Qt::Orientation::Vertical</enum>
                   </property>
@@ -599,7 +620,7 @@ background-color: rgba(255, 255, 255, 0);</string>
                    <string notr="true">background-color: rgba(255, 255, 255, 200);
 border-radius: 16px;</string>
                   </property>
-                  <layout class="QVBoxLayout" name="verticalLayout_78">
+                  <layout class="QVBoxLayout" name="verticalLayout_100">
                    <property name="spacing">
                     <number>0</number>
                    </property>
@@ -624,7 +645,7 @@ background-color: rgba(255, 255, 255, 0);</string>
                  </widget>
                 </item>
                 <item>
-                 <spacer name="verticalSpacer_5">
+                 <spacer name="verticalSpacer_12">
                   <property name="orientation">
                    <enum>Qt::Orientation::Vertical</enum>
                   </property>
@@ -646,7 +667,7 @@ background-color: rgba(255, 255, 255, 0);</string>
            <property name="styleSheet">
             <string notr="true">border:0px solid #838486;  </string>
            </property>
-           <layout class="QVBoxLayout" name="verticalLayout_79">
+           <layout class="QVBoxLayout" name="verticalLayout_101">
             <property name="spacing">
              <number>0</number>
             </property>
@@ -672,18 +693,18 @@ background-color: rgba(255, 255, 255, 0);</string>
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>685</width>
-                 <height>654</height>
+                 <width>100</width>
+                 <height>30</height>
                 </rect>
                </property>
-               <layout class="QVBoxLayout" name="verticalLayout_80"/>
+               <layout class="QVBoxLayout" name="verticalLayout_102"/>
               </widget>
              </widget>
             </item>
            </layout>
           </widget>
           <widget class="QWidget" name="RightPage2">
-           <layout class="QVBoxLayout" name="verticalLayout_81">
+           <layout class="QVBoxLayout" name="verticalLayout_103">
             <property name="spacing">
              <number>0</number>
             </property>
@@ -716,7 +737,7 @@ background-color: rgba(255, 255, 255, 0);</string>
                  <height>74</height>
                 </rect>
                </property>
-               <layout class="QVBoxLayout" name="verticalLayout_82">
+               <layout class="QVBoxLayout" name="verticalLayout_104">
                 <item>
                  <widget class="QWidget" name="RightScrollArea2_Card0" native="true">
                   <property name="minimumSize">
@@ -729,7 +750,7 @@ background-color: rgba(255, 255, 255, 0);</string>
                    <string notr="true">background-color: rgba(255, 255, 255, 200);
 border-radius: 16px;</string>
                   </property>
-                  <layout class="QVBoxLayout" name="verticalLayout_83">
+                  <layout class="QVBoxLayout" name="verticalLayout_105">
                    <property name="spacing">
                     <number>0</number>
                    </property>
@@ -778,7 +799,7 @@ border-radius: 10px</string>
                  </widget>
                 </item>
                 <item>
-                 <spacer name="verticalSpacer_6">
+                 <spacer name="verticalSpacer_13">
                   <property name="orientation">
                    <enum>Qt::Orientation::Vertical</enum>
                   </property>
@@ -797,7 +818,7 @@ border-radius: 10px</string>
            </layout>
           </widget>
           <widget class="QWidget" name="RightPage3">
-           <layout class="QVBoxLayout" name="verticalLayout_84">
+           <layout class="QVBoxLayout" name="verticalLayout_106">
             <property name="spacing">
              <number>0</number>
             </property>
@@ -826,11 +847,11 @@ border-radius: 10px</string>
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>685</width>
-                 <height>654</height>
+                 <width>100</width>
+                 <height>30</height>
                 </rect>
                </property>
-               <layout class="QVBoxLayout" name="verticalLayout_85"/>
+               <layout class="QVBoxLayout" name="verticalLayout_107"/>
               </widget>
              </widget>
             </item>
@@ -842,8 +863,6 @@ border-radius: 10px</string>
       </widget>
      </item>
     </layout>
-    <zorder>RightWidget</zorder>
-    <zorder>LeftWidget</zorder>
    </widget>
    <widget class="QMessageWidget" name="Overlay" native="true">
     <property name="geometry">

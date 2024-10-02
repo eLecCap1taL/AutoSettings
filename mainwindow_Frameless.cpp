@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "ui_mainwindow.h"
 #include <QGraphicsOpacityEffect>
 #include <QPropertyAnimation>
 #include <QDebug>
@@ -16,44 +17,109 @@
 #include <QPainter>
 
 void MainWindow::Setup_Frameless(){
-    setAttribute(Qt::WA_Hover,true);
-    int cornerRadius = 25;
-    QPainterPath path;
-    path.addRoundedRect(0, 0, width(), height(), cornerRadius, cornerRadius);
-    setMask(QRegion(path.toFillPolygon(QTransform()).toPolygon()));
+    // return ;
+    // setAttribute(Qt::WA_Hover,true);
+    // int cornerRadius = 25;
+    // QPainterPath path;
+    // path.addRoundedRect(0, 0, width(), height(), cornerRadius, cornerRadius);
+    // setMask(QRegion(path.toFillPolygon(QTransform()).toPolygon()));
+    // setStyleSheet("border: 2px solid black; border-radius: 25px; background-color: white;");
     setWindowFlags(Qt::FramelessWindowHint);
+    setAttribute(Qt::WA_TranslucentBackground);
+    ui->MainLayout->setAttribute(Qt::WA_TranslucentBackground);
+
+    QGraphicsDropShadowEffect *effect = new QGraphicsDropShadowEffect(this);
+    effect->setOffset(0, 0);          //设置向哪个方向产生阴影效果(dx,dy)，特别地，(0,0)代表向四周发散
+    effect->setColor(Qt::gray);       //设置阴影颜色，也可以setColor(QColor(220,220,220))
+    effect->setBlurRadius(20);        //设定阴影的模糊半径，数值越大越模糊
+    ui->MainLayout->setGraphicsEffect(effect);
 }
+// void MainWindow::paintEvent(QPaintEvent *event) {
+    // QPainter painter(this);
+
+    // 设置圆角路径
+    // int cornerRadius = 25;
+    // QPainterPath path;
+    // path.addRoundedRect(0, 0, width(), height(), cornerRadius, cornerRadius);
+
+    // 设置窗口的遮罩
+    // setMask(QRegion(path.toFillPolygon(QTransform()).toPolygon()));
+
+    // 填充窗口背景
+    // painter.fillPath(path, Qt::white); // 这里可以选择任何背景色
+
+    // 绘制边框
+    // painter.setPen(QPen(Qt::black, 10)); // 边框颜色和宽度
+    // painter.drawPath(path);
+// }
+
 void MainWindow::mousePressEvent(QMouseEvent *event) {
+    MoveCounter=0;
     dragging=1;
-    event->accept();
-}
-void MainWindow::mouseMoveEvent(QMouseEvent *event) {
-    auto g=geometry();
-    g.setBottomRight(g.bottomRight()+QPoint(1,1));
-    setGeometry(g);
-    return ;
-    QMainWindow::mouseMoveEvent(event);
-    qDebug()<<size()<<"\n";
-    auto mp=mapToGlobal(event->pos());
-    if(lstResizeCur){
-        qDebug()<<resizeDirection<<"\n";
-        QSize ts=size();
-        QPoint tp=this->pos();
-        qDebug()<<ts<<' '<<tp<<' '<<mp<<"\n";
-        // if(resizeDirection%3==0){
-        //     ts.setWidth(tp.x()+ts.width()-mp.x());
-        //     tp.setX(mp.x());
-        // }
-        ts=QSize(1000,1000);
-        resize(ts);
-        update();
-        // setGeometry(QRect(tp,ts));
-    }
+    dragStartPos=event->pos();
+    dragStartGeo=geometry();
     // event->accept();
 }
+void MainWindow::mouseMoveEvent(QMouseEvent *event) {
+    auto mp=mapToGlobal(event->pos());
+    auto &D=dragStartPos;
+    auto &G=dragStartGeo;
+    auto Min=minimumSize();
+    if(lstResizeCur){
+        if(MoveCounter!=15){
+            MoveCounter++;
+            return ;
+        }
+        MoveCounter=0;
+        qDebug()<<resizeDirection<<"\n";
+        QRect tg=G;
+        if(resizeDirection%3==0){
+            tg.setLeft(std::min(G.right()-Min.width()+1,mp.x()-D.x()));
+        }else if(resizeDirection%3==2){
+            tg.setRight(std::max(G.left()+Min.width()-1,mp.x()+G.width()-D.x()));
+        }
+        if(resizeDirection/3==0){
+            tg.setTop(std::min(G.bottom()-Min.height()+1,mp.y()-D.y()));
+        }else if(resizeDirection/3==2){
+            tg.setBottom(std::max(G.top()+Min.height()-1,mp.y()+G.height()-D.y()));
+        }
+        if(geometry()!=tg){
+            qDebug()<<tg<<"\n";
+            setGeometry(tg);
+        }
+    }else{
+        QRect tg(mp-D,G.size());
+        if(geometry()!=tg){
+            qDebug()<<tg<<"\n";
+            setGeometry(tg);
+        }
+    }
+}
 void MainWindow::mouseReleaseEvent(QMouseEvent *event) {
+    auto mp=mapToGlobal(event->pos());
+    auto &D=dragStartPos;
+    auto &G=dragStartGeo;
+    auto Min=minimumSize();
+    if(lstResizeCur){
+        qDebug()<<resizeDirection<<"\n";
+        QRect tg=G;
+        if(resizeDirection%3==0){
+            tg.setLeft(std::min(G.right()-Min.width()+1,mp.x()-D.x()));
+        }else if(resizeDirection%3==2){
+            tg.setRight(std::max(G.left()+Min.width()-1,mp.x()+G.width()-D.x()));
+        }
+        if(resizeDirection/3==0){
+            tg.setTop(std::min(G.bottom()-Min.height()+1,mp.y()-D.y()));
+        }else if(resizeDirection/3==2){
+            tg.setBottom(std::max(G.top()+Min.height()-1,mp.y()+G.height()-D.y()));
+        }
+        if(geometry()!=tg){
+            qDebug()<<tg<<"\n";
+            setGeometry(tg);
+        }
+    }
     dragging=0;
-    event->accept();
+    // event->accept();
 }
 // void MainWindow::enterEvent(QEnterEvent *event) {
 //     QMainWindow::enterEvent(event);
@@ -64,9 +130,6 @@ void MainWindow::mouseReleaseEvent(QMouseEvent *event) {
 bool MainWindow::event(QEvent* e){
     if(QEvent::HoverMove == e->type() && !dragging)
     {
-        auto ts=QSize(1000,1000);
-        resize(ts);
-        update();
         QHoverEvent *hoverEvent = static_cast<QHoverEvent*>(e);
 
         auto mp=hoverEvent->oldPos();
@@ -82,11 +145,11 @@ bool MainWindow::event(QEvent* e){
 
         resizeDirection=(1+W)+(1+H)*3;
 
-        qDebug()<<W<<' '<<H<<Qt::endl;
+        // qDebug()<<W<<' '<<H<<Qt::endl;
 
         auto setCur = [this,W,H]()->void{
-            qDebug()<<W<<' '<<H<<Qt::endl;
-            qDebug()<<lstResizeCur<<Qt::endl;
+            // qDebug()<<W<<' '<<H<<Qt::endl;
+            // qDebug()<<lstResizeCur<<Qt::endl;
             if(W*H==1){
                 this->setCursor(Qt::SizeFDiagCursor);
                 lstResizeCur=1;
@@ -116,5 +179,6 @@ bool MainWindow::event(QEvent* e){
     }
     return QWidget::event(e);
 }
+
 
 
