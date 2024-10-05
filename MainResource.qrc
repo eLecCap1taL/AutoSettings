@@ -8,5 +8,6 @@
         <file>home.svg</file>
         <file>settings.svg</file>
         <file>exit.svg</file>
+        <file>CS2.ico</file>
     </qresource>
 </RCC>

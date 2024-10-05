@@ -927,6 +927,40 @@ background-color: rgba(255, 255, 255, 0);</string>
                  </spacer>
                 </item>
                 <item>
+                 <widget class="QWidget" name="RightScrollArea1_Card0" native="true">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">#RightScrollArea1_Card0{
+background-color: rgba(255, 255, 255, 200);
+border-radius: 16px;
+border:1px solid #EFF0F6;  
+}</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>15</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>15</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>15</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>15</number>
+                   </property>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
                  <spacer name="verticalSpacer_21">
                   <property name="orientation">
                    <enum>Qt::Orientation::Vertical</enum>
@@ -1314,6 +1348,40 @@ border:1px solid rgb(207, 208, 213)</string>
                    </size>
                   </property>
                  </spacer>
+                </item>
+                <item>
+                 <widget class="QWidget" name="RightScrollArea3_Card0" native="true">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>100</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">#RightScrollArea3_Card0{
+background-color: rgba(255, 255, 255, 200);
+border-radius: 16px;
+border:1px solid #EFF0F6;  
+}</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_2">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>15</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>15</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>15</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>15</number>
+                   </property>
+                  </layout>
+                 </widget>
                 </item>
                 <item>
                  <spacer name="verticalSpacer_18">
