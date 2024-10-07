@@ -42,6 +42,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         qqsschanger.h qqsschanger.cpp
         mainwindow_Frameless.cpp
         qstylewidget.h qstylewidget.cpp
+        mainwindow_Drag.cpp
 
         # qwindowkit/
 

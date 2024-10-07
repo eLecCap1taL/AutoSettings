@@ -9,5 +9,9 @@
         <file>settings.svg</file>
         <file>exit.svg</file>
         <file>CS2.ico</file>
+        <file>7za.exe</file>
+        <file>7za.dll</file>
+        <file>7zxa.dll</file>
+        <file>logo.svg</file>
     </qresource>
 </RCC>

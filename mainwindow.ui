@@ -159,7 +159,7 @@ border-bottom-left-radius: 25px;
              <property name="sizeHint" stdset="0">
               <size>
                <width>20</width>
-               <height>37</height>
+               <height>14</height>
               </size>
              </property>
             </spacer>
@@ -177,7 +177,7 @@ border-bottom-left-radius: 25px;
                <number>0</number>
               </property>
               <property name="leftMargin">
-               <number>11</number>
+               <number>0</number>
               </property>
               <property name="topMargin">
                <number>0</number>
@@ -197,7 +197,7 @@ border-bottom-left-radius: 25px;
                  </size>
                 </property>
                 <property name="text">
-                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/cs2.svg&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/logo.svg&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
                </widget>
               </item>
@@ -215,7 +215,7 @@ border-bottom-left-radius: 25px;
              <property name="sizeHint" stdset="0">
               <size>
                <width>20</width>
-               <height>36</height>
+               <height>7</height>
               </size>
              </property>
             </spacer>
@@ -550,8 +550,8 @@ border-bottom-left-radius: 0px;
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>630</width>
-                 <height>670</height>
+                 <width>390</width>
+                 <height>370</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_98">
@@ -829,8 +829,8 @@ background-color: rgba(255, 255, 255, 0);</string>
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>630</width>
-                 <height>670</height>
+                 <width>116</width>
+                 <height>135</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_102">
@@ -1009,8 +1009,8 @@ border:1px solid #EFF0F6;
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>630</width>
-                 <height>670</height>
+                 <width>193</width>
+                 <height>85</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_104">

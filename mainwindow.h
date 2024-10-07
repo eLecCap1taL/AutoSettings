@@ -54,12 +54,16 @@ private:
     int IsQuerying;
 
 protected:
+    void dragEnterEvent(QDragEnterEvent *event) override;
+    void dropEvent(QDropEvent *event) override;
     void showEvent(QShowEvent* event)override;
     void resizeEvent(QResizeEvent* event)override;
     void mousePressEvent(QMouseEvent *event) override;
     void mouseMoveEvent(QMouseEvent *event) override;
     void mouseReleaseEvent(QMouseEvent *event) override;
     bool event(QEvent* event)override;
+
+    void processZipFile(const QString &zipFilePath);
 
     const int EDGERESIZE;
 

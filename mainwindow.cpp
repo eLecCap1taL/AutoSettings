@@ -40,6 +40,8 @@ MainWindow::MainWindow(QWidget *parent)
     QString styleSheet=tr(file.readAll());
     this->setStyleSheet(styleSheet);
 
+    setAcceptDrops(true);
+
     //Setup Overlay
     ui->Overlay->setAttribute(Qt::WA_TransparentForMouseEvents);
 
