@@ -1,4 +1,4 @@
-<h1 align="center"><img src="./Misc/Icons/CSRM_dark.png" width="64" align="center"> CSRM CFG Manager</h1>
+<h1 align="center"><img src="./Misc/Icons/CSRM.png" width="64" align="center"> CSRM CFG Manager</h1>
 
 <p align="center">
     <a href="https://cap1tal.top/CSRM">
