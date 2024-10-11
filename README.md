@@ -5,7 +5,7 @@
         <img alt="Static Badge" src="https://img.shields.io/badge/website-CSRM-blue?style=for-the-badge">
     </a>
     <a href="https://github.com/eLecCap1taL/CSRM/pulse">
-        <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/eLecCap1taL/CSRM?style=for-the-badge">
+        <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/eLecCap1taL/AutoSettings?style=for-the-badge">
     </a>
 </p>
 <p align="center">
