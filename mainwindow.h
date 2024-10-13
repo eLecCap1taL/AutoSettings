@@ -51,6 +51,7 @@ private:
     void Setup_MenuBT();
     void Setup_update();
     void Setup_Frameless();
+    void Setup_CustomNade();
     int IsQuerying;
 
 protected:

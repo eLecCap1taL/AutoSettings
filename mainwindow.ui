@@ -21,7 +21,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="MainResource.qrc">
-    <normaloff>:/CS2.png</normaloff>:/CS2.png</iconset>
+    <normaloff>:/favicon.ico</normaloff>:/favicon.ico</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
@@ -550,8 +550,8 @@ border-bottom-left-radius: 0px;
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>390</width>
-                 <height>370</height>
+                 <width>630</width>
+                 <height>670</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_98">
@@ -829,8 +829,8 @@ background-color: rgba(255, 255, 255, 0);</string>
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>116</width>
-                 <height>135</height>
+                 <width>630</width>
+                 <height>670</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_102">
@@ -1009,8 +1009,8 @@ border:1px solid #EFF0F6;
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>193</width>
-                 <height>85</height>
+                 <width>630</width>
+                 <height>670</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_104">
@@ -1380,6 +1380,399 @@ border:1px solid #EFF0F6;
                    <property name="bottomMargin">
                     <number>15</number>
                    </property>
+                   <item>
+                    <widget class="QLabel" name="changeNadeSettings">
+                     <property name="styleSheet">
+                      <string notr="true">font: 12pt &quot;微软雅黑&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
+                     </property>
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;修改道具参数&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_26">
+                     <property name="orientation">
+                      <enum>Qt::Orientation::Vertical</enum>
+                     </property>
+                     <property name="sizeType">
+                      <enum>QSizePolicy::Policy::Preferred</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>5</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_2">
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;在这里修改道具的具体参数&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_20">
+                     <property name="orientation">
+                      <enum>Qt::Orientation::Vertical</enum>
+                     </property>
+                     <property name="sizeType">
+                      <enum>QSizePolicy::Policy::Preferred</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>10</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="Line" name="line_5">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>1</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">border:1px solid rgb(228, 229, 234);  </string>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Orientation::Horizontal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_19">
+                     <property name="orientation">
+                      <enum>Qt::Orientation::Vertical</enum>
+                     </property>
+                     <property name="sizeType">
+                      <enum>QSizePolicy::Policy::Preferred</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QWidget" name="curNadeName" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_3">
+                      <property name="spacing">
+                       <number>10</number>
+                      </property>
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item>
+                       <widget class="QLabel" name="curNade">
+                        <property name="text">
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;道具注册名&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLineEdit" name="lineEdit">
+                        <property name="styleSheet">
+                         <string notr="true">/* Search Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 6px 10px;
+gap: 11px;
+
+background: rgba(120, 120, 128, 0.12);
+border-radius: 10px;
+
+font: 700 9pt &quot;Consolas&quot;;
+color: rgb(0,0,0);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_22">
+                     <property name="orientation">
+                      <enum>Qt::Orientation::Vertical</enum>
+                     </property>
+                     <property name="sizeType">
+                      <enum>QSizePolicy::Policy::Preferred</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>10</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QWidget" name="typePosition" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_2">
+                      <property name="spacing">
+                       <number>10</number>
+                      </property>
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item>
+                       <widget class="QLabel" name="label">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="text">
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;坐标命令&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLineEdit" name="typePositionCMD">
+                        <property name="minimumSize">
+                         <size>
+                          <width>0</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">/* Search Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 6px 10px;
+gap: 11px;
+
+background: rgba(120, 120, 128, 0.12);
+border-radius: 10px;
+
+font: 700 9pt &quot;Consolas&quot;;
+color: rgb(0,0,0);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+</string>
+                        </property>
+                        <property name="frame">
+                         <bool>false</bool>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="verticalSpacer_27">
+                     <property name="orientation">
+                      <enum>Qt::Orientation::Vertical</enum>
+                     </property>
+                     <property name="sizeType">
+                      <enum>QSizePolicy::Policy::Preferred</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>10</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QWidget" name="curNadeThrow" native="true">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_4">
+                      <property name="spacing">
+                       <number>10</number>
+                      </property>
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item>
+                       <widget class="QLabel" name="curNadeThrowLabel">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="text">
+                         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;投掷方式&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QComboBox" name="curNadeThrowCombo">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="minimumSize">
+                         <size>
+                          <width>100</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">/* Search Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 6px 10px;
+gap: 11px;
+
+background: rgba(120, 120, 128, 0.12);
+border-radius: 10px;
+
+font: 700 9pt &quot;微软雅黑&quot;;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+
+QAbstractItemView { background-color: transparent; }
+</string>
+                        </property>
+                        <item>
+                         <property name="text">
+                          <string>左键直接投掷</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>右键直接投掷</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>双键直接投掷</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>左键跳投</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>右键跳投</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>双键跳投</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>左键前跳投</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>右键前跳投</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>双键前跳投</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                      <item>
+                       <spacer name="horizontalSpacer">
+                        <property name="orientation">
+                         <enum>Qt::Orientation::Horizontal</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>0</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
                   </layout>
                  </widget>
                 </item>
@@ -1417,9 +1810,9 @@ border:1px solid #EFF0F6;
     </property>
     <property name="geometry">
      <rect>
-      <x>352</x>
+      <x>512</x>
       <y>0</y>
-      <width>591</width>
+      <width>101</width>
       <height>670</height>
      </rect>
     </property>

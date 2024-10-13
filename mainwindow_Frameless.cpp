@@ -69,10 +69,10 @@ void MainWindow::mouseMoveEvent(QMouseEvent *event) {
             qDebug()<<tg<<"\n";
             setGeometry(tg);
         }
-    }else{
+    }else if(event->pos().x()<=250 && D.x()<=250){
         QRect tg(mp-D,G.size());
         if(geometry()!=tg){
-            qDebug()<<tg<<"\n";
+            // qDebug()<<tg<<"\n";
             setGeometry(tg);
         }
     }
@@ -101,6 +101,7 @@ void MainWindow::mouseReleaseEvent(QMouseEvent *event) {
         }
     }
     dragging=0;
+    dragStartPos = QPoint(114514,114514);
     // event->accept();
 }
 // void MainWindow::enterEvent(QEnterEvent *event) {

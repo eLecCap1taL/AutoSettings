@@ -48,6 +48,7 @@ MainWindow::MainWindow(QWidget *parent)
     Setup_MenuBT();
     Setup_update();
     Setup_Frameless();
+    Setup_CustomNade();
 }
 MainWindow::~MainWindow()
 {

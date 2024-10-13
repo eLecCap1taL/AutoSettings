@@ -13,5 +13,6 @@
         <file>7za.dll</file>
         <file>7zxa.dll</file>
         <file>logo.svg</file>
+        <file>favicon.ico</file>
     </qresource>
 </RCC>
